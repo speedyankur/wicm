@@ -41,7 +41,7 @@ exports.fadeOut = function(to, duration, finishCallback) {
     });
 };
 
-exports.popIn = function(view, finishCallback) {
+exports.popIn = function(view) {
     view.transform = Ti.UI.create2DMatrix();
     view.opacity = 1;
     return;

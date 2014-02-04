@@ -2,7 +2,7 @@
 Android\ Emulator\ Process\:ConsoleLogLevel=Info
 Device\ Log\:ConsoleLogLevel=Info
 FastDev\ Process\:ConsoleLogLevel=Info
-LAST_LAUNCH_TIMESTAMP=1391475517530
+LAST_LAUNCH_TIMESTAMP=1391481022006
 Whichiscooler\:launchMode=run
 Whichiscooler\:launchShortcut=com.appcelerator.titanium.mobile.ui.android.simulator.launchShortcut
 eclipse.preferences.version=1
