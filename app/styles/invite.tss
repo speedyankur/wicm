@@ -1,0 +1,6 @@
+".fbIcon[platform=android]":{
+	backgroundSelectedImage: "/images/fb_icon_sel.png"
+}
+".twtIcon[platform=android]":{
+	backgroundSelectedImage: "/images/twt_icon_sel.png"
+}

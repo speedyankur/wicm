@@ -1,0 +1,9 @@
+<Alloy>
+	<Window id="imageFullview" navbar="false" modal="true" >
+
+        <ImageView id="fullImage"  width=Ti.UI.FILL ></ImageView>
+
+		<Button right="10" top="10" width="32" height="32" backgroundImage="/images/btn_cancel.png" onClick="closeFullView"/>
+        
+	</Window>
+</Alloy>

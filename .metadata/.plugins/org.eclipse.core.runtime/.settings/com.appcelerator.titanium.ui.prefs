@@ -1,0 +1,10 @@
+=run
+Android\ Emulator\ Process\:ConsoleLogLevel=Info
+Device\ Log\:ConsoleLogLevel=Info
+FastDev\ Process\:ConsoleLogLevel=Info
+LAST_LAUNCH_TIMESTAMP=1391475517530
+Whichiscooler\:launchMode=run
+Whichiscooler\:launchShortcut=com.appcelerator.titanium.mobile.ui.android.simulator.launchShortcut
+eclipse.preferences.version=1
+preference.show.console.onError=true
+preference.studio.perspective.version=103

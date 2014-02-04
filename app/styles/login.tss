@@ -1,0 +1,31 @@
+".continueBtn":{
+	color: '#fff',
+	font: {
+		fontSize: '15',
+		fontFamily: 'Helvetica Neue'
+	},
+	borderRadius: "8",
+	backgroundImage: "none",
+
+	backgroundColor: "#30D1F4",
+	backgroundSelectedColor: '#000'
+},
+".skipBtn":{
+
+	color: '#fff',
+	font: {
+		fontSize: '15',
+		fontFamily: 'Helvetica Neue'
+	},
+	borderRadius: "8",
+	backgroundImage: "none",
+
+	backgroundColor: "#808080",
+	backgroundSelectedColor: '#000'
+},
+".fbIcon[platform=android]":{
+	backgroundSelectedImage: "/images/fb_icon_sel.png"
+}
+".twtIcon[platform=android]":{
+	backgroundSelectedImage: "/images/twt_icon_sel.png"
+}

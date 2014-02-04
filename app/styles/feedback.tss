@@ -1,0 +1,6 @@
+
+".feedbackTxt": {
+	font: {
+		fontSize: '24',
+	}
+}

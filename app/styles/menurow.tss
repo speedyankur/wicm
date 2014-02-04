@@ -1,0 +1,19 @@
+"Label": {
+  color: "#808080",
+  font: {
+    fontSize: "16"
+  }
+},
+".vgroup": {
+  layout: "vertical",
+  height: Ti.UI.SIZE
+},
+"#row": {
+  backgroundSelectedColor : "#666",
+  selectedColor : 'white',
+  backgroundColor : "#eef5f8",
+  height: "55"
+},
+"#title": {
+	left: "10"
+}

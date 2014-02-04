@@ -1,0 +1,11 @@
+"Button":{
+	color: '#fff',
+	font: {
+		fontSize: '15',
+		fontFamily: 'Helvetica Neue'
+	},
+	borderRadius:"5",
+	backgroundImage:"none",
+	backgroundSelectedImage:"none",
+	height : "40"
+}

@@ -1,0 +1,26 @@
+<Alloy>
+	<View id="containerview">
+		<View id="leftMenu">
+			<View id="menuHeader">
+				<Label id="menuHeaderLabel"></Label>
+			</View>
+			<TableView id="leftTableView" />
+		</View>
+		<View id="rightMenu">
+			<TableView id="rightTableView" />
+		</View>
+		<View id="movableview">
+			<View id="shadowview">
+				<View id="navview">
+					<Button id="leftButton" />
+					<ImageView id="logo"></ImageView>
+					<Label visible="false" id="viewHeaderLabel">Custome Label</Label>
+					<Button id="filterButton"></Button>
+					<Button id="rightButton" />
+				</View>
+				<View id="contentview" />
+			</View>
+
+		</View>
+	</View>
+</Alloy>

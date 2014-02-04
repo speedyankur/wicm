@@ -1,0 +1,38 @@
+"#navview": {
+	top: "0",
+	left: "0",
+	height : "44",
+	backgroundColor : "#E9E9E9",
+	zIndex:"5"
+},
+
+"#viewHeaderLabel":{
+	left: '10%',
+	right:'10%',
+	top:"0",
+	height: '44',
+	color:"#808080",
+	textAlign:"center",
+	font: {
+		fontSize: "20",
+		fontWeight: 'bold'
+	}
+},
+"ImageView":{
+	top:"5",
+	left:"5",
+	right:"5"
+}
+"Button":{
+	color: '#fff',
+	font: {
+		fontSize: '12',
+		fontFamily: 'Helvetica Neue'
+	},
+	borderRadius:"5",
+	backgroundImage:"none",
+	backgroundSelectedImage:"none",
+	height : "30"
+}
+
+

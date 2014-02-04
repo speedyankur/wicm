@@ -1,0 +1,134 @@
+"#leftMenu": {
+	top: "0dp",
+	left: "0dp",
+	width: "250dp",
+	zIndex: "2",
+	backgroundColor : "#FFF",
+	layout:"vertical"
+},
+"#leftTableView": {
+	separatorColor: '#FFF'
+},
+"#menuHeader":{
+	height:"44dp",
+	backgroundColor : "#E9E9E9",
+	backgroundGradient : {
+	    type : "linear",
+	    startPoint : {
+	      x : "0%",
+	      y : "0%"
+	    },
+	    endPoint : {
+	      x : "0%",
+	      y : "100%"
+	    },
+	    colors : [{
+	      color : "#FCFCFC",
+	      offset : "0.0"
+	    },
+	    {
+	      color : "#E9E9E9",
+	      offset : "1.0"
+	    }]
+	}
+},
+"#menuHeaderLabel": {
+	text:"Menu"
+	
+},
+"#rightMenu": {
+	top: "0dp",
+	right: "0dp",
+	width: "250dp",
+	zIndex: "1",
+	backgroundColor : "#FFF"
+},
+"#navview": {
+	top: "0dp",
+	left: "0dp",
+	height : "44",
+	backgroundColor : "#E9E9E9"
+},
+"#movableview": {
+	left: "0",
+	zIndex: "3",
+	width : Ti.Platform.displayCaps.platformWidth
+},
+"#contentview": {
+	left : "0dp",
+	width : Ti.Platform.displayCaps.platformWidth,
+	height : Ti.UI.Fill,
+	top : "44",
+	backgroundColor : 'white'
+},
+"#shadowview": {
+	shadowColor:"black",
+    shadowOffset:{x:"0",y:"0"},
+    shadowRadius:"2.5"
+},
+"#leftButton[platform=ios]": {
+	backgroundImage : "/ds.slideMenu/btn_menu.png",
+	left : "10",
+	top : "10",
+	width : "25",
+	height : "16",
+	style : "none",
+	//borderColor : "red",
+	//borderWidth : "1",
+},
+"#leftButton[platform=android]": {
+	backgroundImage : "/ds.slideMenu/btn_menu@2x.png",
+	backgroundSelectedImage: "/ds.slideMenu/btn_menu_sel@2x.png",
+	left : "10",
+	top : "5",
+	width : "50",
+	height : "31",
+	style : "none",
+	//borderColor : "red",
+	//borderWidth : "1",
+},
+"#filterButton[platform=ios]": {
+	backgroundImage:"/ds.slideMenu/filterButton.png",
+	width: '21',
+	right: '10',
+	top: '10',
+	height:'25'
+},
+"#filterButton[platform=android]": {
+	backgroundImage:"/ds.slideMenu/btn_filter.png",
+	backgroundSelectedImage: "/ds.slideMenu/btn_filter_sel.png",
+	width: '21',
+	right: '10',
+	top: '10',
+	height:'25'
+},
+"#logo": {
+	image: "/ds.slideMenu/logo.png",
+	left: '25%',
+	right:'25%',
+	top: '8',
+	height: '22'
+},
+"#viewHeaderLabel":{
+	left: '25%',
+	right:'25%',
+	top:"0",
+	height: '44',
+	color:"#808080",
+	textAlign:"center",
+	font: {
+		fontSize: "20",
+		fontWeight: 'bold'
+	}
+}
+
+"#rightButton": {
+	visible:false,
+	backgroundImage : 'none',
+	image : "/ds.slideMenu/ButtonMenu.png",
+	right : "0",
+	top : "0",
+	width : "60",
+	height : "44",
+	style : "none"
+}

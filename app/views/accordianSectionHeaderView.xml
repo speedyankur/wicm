@@ -1,0 +1,7 @@
+<Alloy>
+	<View height="36" backgroundColor="#ECF5F8" borderColor = "#FFF" onClick="toggleSection" id="view">
+		<ImageView id="icon" left="10" image="/images/arrow_down.png"></ImageView>
+		<ImageView id="additionalIcon" left="40" ></ImageView>
+		<Label  left="40" id="label"></Label>
+	</View>
+</Alloy>

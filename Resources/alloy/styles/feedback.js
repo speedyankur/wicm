@@ -1,0 +1,1 @@
+module.exports = [{"isClass":true,"priority":10000.0071,"key":"feedbackTxt","style":{font:{fontSize:"24",},}}];

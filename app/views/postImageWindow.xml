@@ -1,0 +1,24 @@
+<Alloy>
+	<Window id="window" backgroundColor="#FFF" modal="false"  navBarHidden="true" onOpen="onOpen" onClick="onWindowClick">
+		<View id="navview">
+			<Button left="10" id="cancel" backgroundColor="#30D1F4" backgroundSelectedColor="#000" title="Cancel" width="60" onClick="goBack"></Button>
+			<Label id="viewHeaderLabel">Post</Label>
+			<Button right="10" id="post" backgroundColor="#30D1F4" backgroundSelectedColor="#000" title="Post" width="60" onClick="goBack"></Button>
+		</View>
+		<View   height="150" backgroundColor="#fff" top="50">
+			<View  id="column1" width="140" layout="vertical" left="15"  >
+				<ImageView top="0" id="selectedImage"  />
+			</View>
+			<View  id="column2"  layout="vertical" left="165" right="10">
+				<TextArea id="textArea" width="Ti.UI.FILL" height="80" borderWidth="1" borderColor="#808080" borderRadius="3" ></TextArea>
+				<Label id="sale" top="10">Is this thing for sale?</Label>
+				<View height="29" top="10" width="90" layout="horizontal" id="saleSwitch"  >
+					<View id="yesBtn" onClick="onSwitch" left="0" width="45" backgroundImage="/images/btn_yes.png"></View>
+					<View id="noBtn" right="0"  onClick="offSwitch"  width="45" backgroundImage="/images/btn_no_sel.png"></View>
+
+				</View>
+			</View>
+		</View>
+		<TableView id="tableView" top="210" bottom="0"	></TableView>
+	</Window>
+</Alloy>

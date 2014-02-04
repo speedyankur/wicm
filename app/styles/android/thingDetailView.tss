@@ -1,0 +1,174 @@
+"#navview": {
+	top: "0",
+	left: "0",
+	height: "44",
+	backgroundColor: "#E9E9E9",
+	zIndex: "5"
+},
+"#leftButton": {
+	backgroundImage: "/images/btn_back.png",
+	left: "15",
+	top: "15",
+	width: "10",
+	height: "14"
+},
+"#viewHeaderLabel":{
+	left: '10%',
+	right: '10%',
+	top: "0",
+	height: '44',
+	color: "#808080",
+	textAlign: "center",
+	font: {
+		fontSize: "20",
+		fontWeight: 'bold'
+	}
+},
+"#thing":{
+	backgroundColor: "#fff"
+},
+"#thingImage":{
+	top: 0
+},
+".thing_info": {
+	width: Ti.UI.FILL,
+	bottom: 0,
+	left: 0,
+	right: 0,
+	height: 50,
+	backgroundColor: "#5000",
+	backgroundImage: null, // Prevent a app-wide Window-background to take over
+	opacity: 1.0
+},
+"#thingDetailsLabel":{
+	width:Ti.UI.FILL,
+	top:5,
+	bottom:5,
+	left:5,
+	right:5,
+	color: '#fff',
+	font: {
+		fontSize: '14'
+	},
+	horizontalWrap: true
+},
+"#imageLabel": {
+	color: '#808080',
+	font: {
+		fontSize: '14'
+	}
+},
+"#hypen": {
+	color: '#808080',
+	font: {
+		fontSize: '14'
+	}
+},
+"#price": {
+	color: '#808080',
+	font: {
+		fontSize: '14'
+	}
+},
+"#scoreLabel": {
+	color: '#4f4f4f',
+	font: {
+		fontSize: '14',
+		fontWeight: 'bold'
+	}
+},
+"#score": {
+	color: '#1683af',
+	font: {
+		fontSize: '14',
+		fontWeight: 'bold'
+	}
+},
+"#statBegin": {
+	color: '#808080',
+	font: {
+		fontSize: '14'
+	}
+},
+"#win": {
+	color: '#808080',
+	font: {
+		fontSize: '14'
+	}
+},
+"#winText": {
+	color: '#808080',
+	font: {
+		fontSize: '14'
+	}
+},
+"#loss": {
+	color: '#808080',
+	font: {
+		fontSize: '14'
+	}
+},
+"#lossText": {
+	color: '#808080',
+	font: {
+		fontSize: '14'
+	}
+},
+".portrait": {
+	layout: 'vertical',
+	width: Ti.UI.FILL,
+	bottom: 40,
+	top: 44
+},
+".landscape": {
+	layout: 'horizontal',
+	top: 44
+}
+".bottomBar": {
+	width: Ti.UI.FILL,
+	height: 40,
+	bottom: 0,
+	backgroundColor: '#6dcff6',
+	layout: 'vertical'
+},
+".pt_thing": {
+	height: 250,
+	width: Ti.UI.FILL
+},
+".thing_info": {
+	width:Ti.UI.FILL,
+	bottom:0,
+	left:5,
+	right:5,
+	height:50,
+	backgroundColor: "#5000",
+	backgroundImage: null, // Prevent a app-wide Window-background to take over
+	opacity: 1.0 // Or alpha channel in backgroundColor won't work,
+},
+".thing_label": {
+	layout: "horizontal",
+	width:Ti.UI.FILL,
+	top:5,
+	bottom:5,
+	left:5,
+	right:5
+},
+".pt_detail": {
+	height: Ti.UI.SIZE,
+	width: Ti.UI.FILL,
+	layout: "vertical"
+},
+"#postButton":{
+	backgroundImage:"/images/btn_post.png",
+	width:"60",
+	height:"30",
+	top:"5",
+	bottom:"5",
+	right:"10"
+},
+"TextField":{
+	font: {
+		fontSize: '14'
+	}
+}
+

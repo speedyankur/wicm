@@ -1,0 +1,44 @@
+<Alloy>
+	<View id="feedback"
+		height="auto">
+		<View id="portrait"
+			layout="vertical"
+			height="Ti.UI.SIZE"
+			top="50">
+			<Label class="feedbackTxt"
+				color="#808080"
+				text="Please visit"
+				textAlign="center"/>
+			<Label platform="android"
+				class="feedbackTxt"
+				color="#519dba"
+				html="<u>wic.uservoice.com</u>"
+				textAlign="center"
+				onClick="goToUV"/>
+			<ImageView platform="ios"
+				image="/images/feedback_txt_v.png"
+				width="184"
+				height="22"
+				onClick="goToUV"/>
+			<Label class="feedbackTxt"
+				color="#808080"
+				text="to post new ideas"
+				textAlign="center"/>	
+			<Label class="feedbackTxt"
+				color="#808080"
+				text="and leave feedback."
+				textAlign="center"/>
+		</View>
+				
+		<!--<View id="landscape" layout="vertical" height="Ti.UI.SIZE">
+			<Label class="feedbackTxt"
+				color="#808080"
+				text="Please visit wic.uservoice.com"
+				textAlign="center"/>
+			<Label class="feedbackTxt"
+				color="#808080"
+				text="to post new ideas and leave feedback."
+				textAlign="center"/>
+		</View>-->
+	</View>
+</Alloy>

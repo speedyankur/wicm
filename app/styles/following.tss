@@ -1,0 +1,11 @@
+"#searchButton":{
+	backgroundImage:"/images/btn_search.png",
+	width:"60",
+	height:"30",
+	top:"10",
+	bottom:"10",
+	right:"10"
+},
+"TextField":{
+	color:"#808080"
+}

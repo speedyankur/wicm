@@ -1,0 +1,18 @@
+"TableViewRow": {
+	height:50,
+	font: {
+		fontSize: "16"
+	},
+	backgroundColor: "#eef5f8"
+},
+"Label":{
+	left:10,
+	right:30,
+	color: "#808080"
+},
+"Button":{
+	right:10,
+	height:16,
+	width:16,
+	backgroundImage:"/images/icon_edit.png"
+}

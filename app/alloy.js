@@ -1,0 +1,209 @@
+Alloy.Globals.serverPath = "http://limitless-eyrie-1080.herokuapp.com/";
+
+/*
+ * Other common variables
+ */
+Alloy.Globals.votingIdealTimer = 2000;
+//This is the time interval between voting and next photo fetching
+
+Alloy.Globals.matches = [];
+//This will contain all the matches loaded so far
+Alloy.Globals.currentMatchIndex = -1;
+//This is the index of current match which is under observation
+
+/*
+ * Global filters
+ */
+Alloy.Collections.filters = Alloy.createCollection('filter');
+Alloy.Globals.activeFilterRowColor = '#CCDDE4';
+Alloy.Globals.normalFilterRowColor = '#eef5f8';
+Alloy.Globals.activeFilterRow
+Alloy.Globals.selectedFilter = -1;
+Alloy.Globals.setSelectedFilter = function(selectedFilter) {
+	Alloy.Globals.selectedFilter = selectedFilter;
+	Titanium.App.Properties.setInt('selectedFilter', selectedFilter);
+}
+Alloy.Globals.getSelectedFilter = function() {
+	Alloy.Globals.selectedFilter = Titanium.App.Properties.getInt('selectedFilter');
+	return Alloy.Globals.selectedFilter;
+}
+if (!Titanium.App.Properties.getInt('settingsLoaded')) {
+	Alloy.Globals.setSelectedFilter(1);
+	Titanium.App.Properties.setInt('settingsLoaded', true);
+}
+
+/*
+ * Is iOS7 Plus?
+ */
+Alloy.Globals.isiOS7Plus = function() {
+	// iOS-specific test
+	if (Titanium.Platform.name == 'iPhone OS') {
+		var version = Titanium.Platform.version.split(".");
+		var major = parseInt(version[0], 10);
+
+		// Can only test this support on a 3.2+ device
+		if (major >= 7) {
+			return true;
+		}
+	}
+	return false;
+}
+/*
+ * Common Loading bar
+ */
+Alloy.Globals.loading = Alloy.createWidget("nl.fokkezb.loading");
+
+Alloy.Globals.createTableSectionHeaderViewForAccordian = function(data) {
+
+	var customView = Alloy.createController('accordianSectionHeaderView', data).getView();
+
+	var section = Ti.UI.createTableViewSection({
+		headerView : customView
+	});
+	customView.section = section;
+	return section;
+};
+
+Alloy.Globals.createTableSectionHeaderView = function(label, leftHeaderViewImage) {
+	var customView = Ti.UI.createView({
+		height : '36',
+		backgroundColor : "#bfd9e4",
+		borderColor : "#FFF"
+	});
+
+	var customLabel = Ti.UI.createLabel({
+		top : "6",
+		bottom : "6",
+		left : "10",
+		right : "10",
+		text : label,
+		font : {
+			fontSize : '16',
+			fontWeight : 'bold'
+		},
+		color : '#808080',
+		//borderColor:"red",
+		//borderWidth:"1"
+	});
+	if (leftHeaderViewImage) {
+
+		// Create an ImageView.
+		var anImageView = Ti.UI.createImageView({
+			image : leftHeaderViewImage,
+			left : 10
+		});
+
+		// Add to the parent view.
+		customView.add(anImageView);
+		customLabel.left = 30;
+
+	};
+	customView.add(customLabel);
+
+	var section = Ti.UI.createTableViewSection({
+		headerView : customView
+	});
+
+	return section;
+};
+
+Alloy.Globals.buttonFocused = function(e) {
+	if (OS_IOS)
+		e.source.setBackgroundColor('#000');
+	// just for effect
+};
+
+Alloy.Globals.buttonBlurred = function(e) {
+	if (OS_IOS)
+		e.source.setBackgroundColor('#30D1F4');
+	// just for effect
+};
+Alloy.Globals.buttonBlurredGray = function(e) {
+	if (OS_IOS)
+		e.source.setBackgroundColor('#808080');
+	// just for effect
+};
+Alloy.Globals.objectOpacityOnFocused = function(e) {
+
+	e.source.setOpacity(0.7);
+	// just for effect
+};
+
+Alloy.Globals.objectOpacityOnBlurred = function(e) {
+
+	e.source.setOpacity(1.0);
+	// just for effect
+};
+
+Alloy.Globals.parseURL = function(url) {
+	parsed_url = {}
+	if (url == null || url.length == 0)
+		return parsed_url;
+	protocol_i = url.indexOf('://');
+	parsed_url.protocol = url.substr(0, protocol_i);
+	remaining_url = url.substr(protocol_i + 3, url.length);
+	domain_i = remaining_url.indexOf('/');
+	domain_i = domain_i == -1 ? remaining_url.length - 1 : domain_i;
+	parsed_url.domain = remaining_url.substr(0, domain_i);
+	return parsed_url.domain;
+}
+/*
+ * Login First
+ */
+Alloy.Globals.loginFirst = function(callback) {
+	Ti.API.info(callback);
+	var nxtArgs = {};
+	nxtArgs.popUpLabel = "You need to log in to do that.";
+	nxtArgs.but1Label = "Log In";
+	nxtArgs.but2label = "Never mind";
+	nxtArgs.but1handler = function() {
+		popUpWindow.close();
+		var controller = Alloy.createController('login');
+		var win = controller.getView();
+		win.addEventListener('close', function() {
+			if (Alloy.Globals.APIKey) {
+				callback();	
+			}
+		});
+		if (OS_IOS)
+			Alloy.Globals.navgroup.open(win);
+		else
+			win.open({
+				activityEnterAnimation : Ti.App.Android.R.anim.slide_in_right
+			});
+
+	};
+	nxtArgs.but2handler = function() {
+		popUpWindow.close();
+	};
+	var popUpWindow = Alloy.createController('popUpWindow', nxtArgs).getView();
+	popUpWindow.open();
+}
+
+Date.prototype.format = function(format)//author: meizz
+{
+	var hours = this.getHours();
+	var ttime = "AM";
+	if (format.indexOf("t") > -1 && hours > 12) {
+		hours = hours - 12;
+		ttime = "PM";
+	}
+
+	var o = {
+		"M+" : this.getMonth() + 1, //month
+		"d+" : this.getDate(), //day
+		"h+" : hours, //hour
+		"m+" : this.getMinutes(), //minute
+		"s+" : this.getSeconds(), //second
+		"q+" : Math.floor((this.getMonth() + 3) / 3), //quarter
+		"S" : this.getMilliseconds(), //millisecond,
+		"t+" : ttime
+	}
+
+	if (/(y+)/.test(format))
+		format = format.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+	for (var k in o)
+	if (new RegExp("(" + k + ")").test(format))
+		format = format.replace(RegExp.$1, RegExp.$1.length == 1 ? o[k] : ("00" + o[k]).substr(("" + o[k]).length));
+	return format;
+}

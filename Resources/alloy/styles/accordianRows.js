@@ -1,0 +1,1 @@
+module.exports = [{"isApi":true,"priority":1000.0033,"key":"TableViewRow","style":{left:"20",right:"20",font:{fontSize:"15",},color:"#808080",}}];

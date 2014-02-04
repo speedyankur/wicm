@@ -1,0 +1,21 @@
+<Alloy>
+	<TableViewRow height="50">
+		<View width="Ti.UI.FILL" id="picView"
+			layout="horizontal">
+			<ImageView id="imageView" top="0"
+				right="10"
+				bottom="10"
+				left="10"
+				defaultImage="/images/user.jpg"
+				width="35"
+				height="35"/>
+		</View>
+		<View layout="vertical">
+			<Label class="username" id="username"
+				left="60"
+				text=""/>
+			<Label class="usercomment" left="60" id="comment"
+				text=""/>
+		</View>
+	</TableViewRow>
+</Alloy>

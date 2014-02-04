@@ -1,0 +1,273 @@
+<Alloy>
+	<Window 
+		id="login"
+		onClose="onClose" 
+		onOpen="onOpen" 
+		backgroundColor="#FFF"
+		modal="false"
+		navBarHidden="true"
+		
+		onAndroid:back="closingWindowAnimationforAndroid">
+		<ScrollView layout="vertical" id="portrait"  visible="false">
+			<ImageView image="/images/logo.png"
+				top="20"
+				width="276"
+				height="38"/>
+			<Label color="#808080"
+				fontSize="18"
+				top="10"
+				text="Sign in or create account with:"/>
+			<View height="52"
+				  width="Ti.UI.SIZE"
+				  top="10"
+				  layout="horizontal">
+				<Button width="52"
+						   class="fbIcon"
+						   height="52"
+						   backgroundImage="/images/fb_icon.png"/>
+				<Button width="52"
+						   class="twtIcon"
+						   height="52"
+						   left="32"
+						   backgroundImage="/images/twt_icon.png"/>
+			</View>
+			<View height="20"
+				  width="Ti.UI.SIZE"
+				  top="10"
+				  layout="horizontal">
+				<ImageView width="52"
+						   height="2"
+						   image="/images/hrzntl1.png"/>
+				<Label color="#808080"
+					fontSize="18"
+					top="-3"
+					left="8"
+					text="or"/>
+				<ImageView width="52"
+						   height="2"
+						   left="8"
+						   image="/images/hrzntl1.png"/>
+			</View>
+			<View id="fieldsView_p" layout="vertical" height=Ti.UI.SIZE width=Ti.UI.FILL>	
+				<View height="40"
+					width="72%"
+					layout="absolute"
+					top="0">
+					<ImageView id="emailIcon"
+						width="40"
+						height="40"
+						image="/images/email_icon.png"
+						left="0"/>
+					<TextField id="email_p"
+						width="Ti.UI.FILL"
+						height="Ti.UI.FILL"
+						left="39"
+						value = ""
+						borderRadius="2"
+						hintText="Email"
+						color="black"
+						fontSize="16"
+						borderColor="#ccc"
+						borderWidth="1"
+						paddingLeft="10" />					
+				</View>
+				<View height="40"
+					width="72%"
+					layout="absolute"
+					top="8">
+					<ImageView id="passIcon"
+						width="40"
+						height="40"
+						image="/images/pass_icon.png"
+						left="0"/>
+					<TextField id="pass_p"
+						width="Ti.UI.FILL"
+						height="Ti.UI.FILL"
+						left="39"
+						borderRadius="2"
+						hintText="*********"
+						color="black"
+						fontSize="16"
+						borderColor="#ccc"
+						borderWidth="1"
+						paddingLeft="10"
+						passwordMask="true"/>
+				</View>
+			</View>
+			<Label platform="android" 
+				top="10"
+				html="<u>Forget Password?</u>"
+				color="#519dba"
+				fontSize="16"/>
+			<ImageView platform="ios"
+				image="/images/forgot_pass.png"
+				top="10"
+				width="111"
+				height="15"/>
+			<Label platform="android" 
+				top="20"
+				html="By continuing you confirm that you've read and accept the <u style='color#519dba'>Terms of Service</u>"
+				color="#808080"
+				fontSize="14"
+				textAlign="center"
+				width="72%"/>
+			<ImageView platform="ios"
+				image="/images/toc.png"
+				top="20"
+				width="220"
+				height="27"/>
+			<Button id="continue_button"
+				title="Continue"
+				class="continueBtn"
+				onClick="loginNow"
+				width="229"
+				height="46"
+				onTouchstart="Alloy.Globals.buttonFocused" 
+				onTouchend="Alloy.Globals.buttonBlurred"
+				backgroundImage="none"
+				top="10"/>
+			<Button id="skip_button"
+				title="Skip this step"
+				class="skipBtn"
+				onClick="skipNow"
+				width="229"
+				height="46"
+				onTouchstart="Alloy.Globals.buttonFocused" 
+				onTouchend="Alloy.Globals.buttonBlurredGray"				
+				backgroundImage="none"
+				top="10"/>
+		</ScrollView>
+		
+		<ScrollView id="landscape" layout="horizontal"  visible="false">
+			<View layout="vertical" width="50%">
+				<Label color="#808080"
+				fontSize="18"
+				top="20"
+				text="Sign in or create account with:"/>
+				<View height="52"
+					  width="Ti.UI.SIZE"
+					  top="10"
+					  layout="horizontal">
+					<Button width="52"
+							   class="fbIcon"
+							   height="52"
+							   backgroundImage="/images/fb_icon.png"/>
+					<Button width="52"
+							   class="twtIcon"
+							   height="52"
+							   left="32"
+							   backgroundImage="/images/twt_icon.png"/>
+				</View>
+				<View height="20"
+					  width="Ti.UI.SIZE"
+					  top="10"
+					  layout="horizontal">
+					<ImageView width="52"
+							   height="2"
+							   image="/images/hrzntl1.png"/>
+					<Label color="#808080"
+						fontSize="18"
+						top="-3"
+						left="8"
+						text="or"/>
+					<ImageView width="52"
+							   height="2"
+							   left="8"
+							   image="/images/hrzntl1.png"/>
+				</View>
+				<View height="40"
+					width="90%"
+					layout="absolute"
+					top="20">
+					<ImageView id="emailIcon"
+						width="40"
+						height="40"
+						image="/images/email_icon.png"
+						left="0"/>
+					<TextField id="email_l"
+						width="Ti.UI.FILL"
+						height="Ti.UI.FILL"
+						left="39" 
+						borderRadius="2"
+						hintText="Email"
+						color="black"
+						fontSize="16"
+						borderColor="#ccc"
+						borderWidth="1"
+						paddingLeft="10" />
+						
+				</View>
+				<View height="40"
+					width="90%"
+					layout="absolute"
+					top="8">
+					<ImageView id="passIcon"
+						width="40"
+						height="40"
+						image="/images/pass_icon.png"
+						left="0"/>
+					<TextField id="pass"
+						width="Ti.UI.FILL"
+						height="Ti.UI.FILL"
+						left="39"
+						borderRadius="2"
+						hintText="*********"
+						color="black"
+						fontSize="16"
+						borderColor="#ccc"
+						borderWidth="1"
+						paddingLeft="10"
+						passwordMask="true"/>
+				</View>
+				<Label platform="android" 
+					top="10"
+					html="<u>Forget Password?</u>"
+					color="#519dba"
+					fontSize="16"/>
+				<ImageView platform="ios"
+					image="/images/forgot_pass.png"
+					top="10"
+					width="111"
+					height="15"/>
+			</View>
+			<View layout="vertical" width="50%">
+				<ImageView image="/images/logo.png"
+					top="40"
+					width="218"
+					height="30"/>
+					<Label platform="android" 
+					top="40"
+					html="By continuing you confirm that you've read and accept the <u style='color#519dba'>Terms of Service</u>"
+					color="#808080"
+					fontSize="14"
+					textAlign="center"
+					width="72%"/>
+				<ImageView platform="ios"
+					image="/images/toc.png"
+					top="40"
+					width="220"
+					height="27"/>
+				<Button id="continue_button"
+					title="Contine"
+					class="continueBtn"
+					onClick="goToMain"
+					width="229"
+					height="46"
+					onTouchstart="Alloy.Globals.buttonFocused" 
+					onTouchend="Alloy.Globals.buttonBlurred"					
+					backgroundImage="none"
+					top="10"/>
+				<Button id="skip_button"
+					title="Skip this step"
+					class="skipBtn"
+					onClick="goToMain"
+					width="229"
+					height="46"
+					onTouchstart="Alloy.Globals.buttonFocused" 
+					onTouchend="Alloy.Globals.buttonBlurredGray"					
+					backgroundImage="none"
+					top="10"/>
+			</View>
+		</ScrollView>
+	</Window>
+</Alloy>

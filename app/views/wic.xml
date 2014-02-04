@@ -1,0 +1,8 @@
+<Alloy >
+	<View id="wic" bottom="44" onTouchmove="onTouchmove" onTouchstart="onTouchstart" onTouchend="onTouchend" >
+		<ScrollableView id="scrollableView" showPagingControl="false" >
+			<Require src="wicMatch" />
+		</ScrollableView>
+	</View>
+
+</Alloy>

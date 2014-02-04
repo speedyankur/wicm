@@ -1,0 +1,69 @@
+"#navview": {
+	top: "0",
+	left: "0",
+	height: "44",
+	backgroundColor: "#E9E9E9",
+	zIndex: "5"
+},
+"#leftButton[platform=ios]": {
+	backgroundImage: "/images/btn_back.png",
+	left: "10",
+	top: "15",
+	width: "30",
+	height: "14",
+	zIndex:"10"
+},
+"#leftButton[platform=android]": {
+	backgroundImage: "/images/btn_back@2x.png",
+	backgroundSelectedImage:"/images/btn_back_sel@2x.png",
+	left: "0",
+	top: "7",
+	width: "60",
+	height: "28",
+	zIndex:"10"
+},
+"#viewHeaderLabel":{
+	left: '10%',
+	right: '10%',
+	top: "0",
+	height: '44',
+	color: "#808080",
+	textAlign: "center",
+	font: {
+		fontSize: "20",
+		fontWeight: 'bold'
+	}
+}
+"Button":{
+	color: '#fff',
+	font: {
+		fontSize: '15',
+		fontFamily: 'Helvetica Neue'
+	},
+	borderRadius: "5",
+	backgroundImage: "none",
+	backgroundSelectedImage: "none",
+	height: "30"
+},
+
+"#column1":{
+	width: "40%"
+},
+"#column2":{
+	width: "60%"
+},
+"#label":{
+	color: "#808080",
+	font: {
+		fontSize: '15',
+		fontFamily: 'Helvetica Neue'
+	}
+}
+"#value":{
+	color: "#30D1F4",
+	font: {
+		fontSize: '15',
+		fontFamily: 'Helvetica Neue'
+	}
+}
+

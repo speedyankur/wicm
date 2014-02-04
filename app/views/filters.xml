@@ -1,0 +1,11 @@
+<Alloy>
+	<View id="filters"  bottom="45">
+		<TableView id="tableView" bottom="50" separatorColor="#fff" dataCollection="filters">
+            <Require src="filterRowItem"/>
+        </TableView>
+		<View height="50" bottom="0" backgroundColor="#E7E7E7" left="0" right="0">
+			<Button top="5"  id="next" backgroundColor="#30D1F4" backgroundSelectedColor="#000" title="Create New Filter" width="150" onClick="newFilter" ></Button>
+		</View>
+	</View>
+
+</Alloy>

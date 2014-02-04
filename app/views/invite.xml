@@ -1,0 +1,18 @@
+<Alloy>
+	<View id="invite">
+		<View height="52"
+		width="Ti.UI.SIZE"
+		top="50"
+		layout="horizontal">
+			<Button width="52"
+			class="fbIcon"
+			height="52"
+			backgroundImage="/images/fb_icon.png"/>
+			<Button width="52"
+			class="twtIcon"
+			height="52"
+			left="32"
+			backgroundImage="/images/twt_icon.png"/>
+		</View>
+	</View>
+</Alloy>

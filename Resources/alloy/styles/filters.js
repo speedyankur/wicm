@@ -1,0 +1,1 @@
+module.exports = [{"isApi":true,"priority":1000.0077,"key":"Button","style":{color:"#fff",font:{fontSize:"15",fontFamily:"Helvetica Neue",},borderRadius:"5",backgroundImage:"none",backgroundSelectedImage:"none",height:"40",}}];

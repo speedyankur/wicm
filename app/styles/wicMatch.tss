@@ -1,0 +1,72 @@
+".portrait": {
+	layout: "vertical",
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL
+},
+".landscape":{
+	layout: "horizontal",
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL
+},
+".thing":{
+	height: "50%",
+	width: "100%"
+},
+".half":{
+	height: "100%",
+	width: "50%"
+},
+".flagbasic":{
+	right: 10,
+	width: 32,
+	height: 32,
+	backgroundImage: "/images/flag.png"
+},
+".flag":{
+	top: 10
+},
+".lflag":{
+	bottom: 10
+},
+
+".infobasic":{
+	bottom: 10,
+	width: 32,
+	height: 32,
+	backgroundImage: "/images/info.png"
+},
+".info": {
+	right: 10
+},
+".linfo": {
+	left: 10
+},
+".scoreCard":{
+	top: 0,
+	left: 0,
+	bottom: 0,
+	right: 0,
+	visible: false,
+	backgroundColor: "#7000",
+	backgroundImage: null, // Prevent a app-wide Window-background to take over
+	opacity: 1.0,
+	layout:"vertical"
+},
+".thingScore":{
+	textAlign: "center",
+	top:90,
+	color:'#fff',
+	font:{
+		fontSize: 30,
+		fontWeight: 'bold'
+	}
+},
+".thingWinsLose":{
+	textAlign: "center",
+	color:'#fff',
+	font:{
+		fontSize: 18
+	}
+}
+
+

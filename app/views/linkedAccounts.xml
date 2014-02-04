@@ -1,0 +1,6 @@
+<Alloy>
+	<View id="linkedAccounts">
+		<TableView id="tableView" separatorColor="#fff">			
+		</TableView>		
+	</View>
+</Alloy>

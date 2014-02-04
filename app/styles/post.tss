@@ -1,0 +1,48 @@
+"Window": {
+	backgroundColor: "#fff",
+	modal: false,
+	navBarHidden:true
+},
+"#portrait":{
+	height:Ti.UI.FILL,
+	visible:"false"
+},
+"#landscape":{
+	visible:"false"
+},
+"#logo":{
+	 width:'276', height:'38', image: '/images/logo.png'
+},
+"#shareIcon":{
+	image:"/images/post_share_icon.png",
+	width:'204',
+	height:'270'
+},
+"Label": {
+	width: Ti.UI.FILL,
+	textAlign:"center",
+	height: Ti.UI.SIZE,
+	color: '#808080',
+	font: {
+		fontSize: '20',
+		fontFamily: 'Helvetica Neue'
+	}
+},
+"Button":{
+	color: '#fff',
+	font: {
+		fontSize: '15',
+		fontFamily: 'Helvetica Neue'
+	},
+	borderRadius: "8",
+	backgroundImage: "none",
+	height: "46",
+	backgroundColor: "#30D1F4",
+	backgroundSelectedColor: '#000'
+},
+"#column1":{
+	width:"55%"
+},
+"#column2":{
+	width:"45%"
+}

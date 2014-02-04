@@ -1,0 +1,19 @@
+<Alloy>
+	<Window id="window" backgroundColor="#F5F5F5" modal="false"  navBarHidden="true">
+		<View id="navview">
+			<Button id="leftButton" onClick="goBack" />
+			<Label id="viewHeaderLabel">Add From a Web Page</Label>
+		</View>
+		<ScrollView >
+			<View layout="vertical" backgroundColor="#fff">
+				<Label id="desc" top="60">Enter web address here or share directly from your brower's share button</Label>
+				<TextField ></TextField>
+				<Button top="10" right="20" id="paste" backgroundColor="#808080" backgroundSelectedColor="#000" title="Paste" width="150" ></Button>
+			</View>
+			<View height="50" bottom="0" backgroundColor="#E7E7E7" left="0" right="0">
+				<Button top="5"  id="next" backgroundColor="#30D1F4" backgroundSelectedColor="#000" title="Next" width="150" onClick="next" ></Button>
+			</View>
+		</ScrollView>
+
+	</Window>
+</Alloy>

@@ -1,0 +1,29 @@
+"Window[platform=ios]":{
+	backgroundImage: "/images/transparentbg.png"
+},
+"Window[platform=android]":{
+	backgroundColor: "#5000",
+	backgroundImage: null, // Prevent a app-wide Window-background to take over
+	opacity: 1.0, // Or alpha channel in backgroundColor won't work,
+	modal: false // Heavy weight on Android
+},
+"Label":{
+	color: '#808080',
+	textAlign:'center',
+	width:Ti.UI.FILL,
+	font: {
+		fontSize: '25',
+		fontFamily: 'Helvetica Neue'
+	}
+},
+"Button":{
+	color: '#fff',
+	font: {
+		fontSize: '15',
+		fontFamily: 'Helvetica Neue'
+	},
+	borderRadius:"5",
+	backgroundImage:"none",
+	backgroundSelectedImage:"none",
+	height : "50"
+}

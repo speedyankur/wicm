@@ -1,0 +1,50 @@
+<Alloy autoStyle="true">
+	<Window backgroundColor="#F5F5F5" modal="true" navBarHidden="true"  id="tdv" onClose="onClose">
+		<View id="navview">
+			<Button id="leftButton" onClick="goBack" />
+			<Label id="viewHeaderLabel">Thing Detail</Label>
+		</View>
+		<ScrollView class="portrait landscape" id="portrait" >
+			<View id="thing" >
+				<ImageView id="thingImage" onDblclick="showFullImage"></ImageView>
+				<View class="thing_info">
+					<Label id="thingDetailsLabel"></Label>
+				</View>	
+
+			</View>
+			<View class="pt_detail" id="detail" >
+				<View height="18" width=Ti.UI.FILL layout="horizontal">
+					<Label id="imageLabel" text="Lorem Ipsum is dummy text" left="8" top="0"/>
+					<Label id="hypen" text=" - " top="0"/>
+					<Label id="price" text="$150." top="0"/>
+				</View>
+				<ScrollView height="20" layout="horizontal" horizontalWrap=false contentWidth="100%" contentHeight="20"  id="tags">
+					
+				</ScrollView>				
+				<View height="18" width=Ti.UI.FILL layout="horizontal" >
+					<Label id="scoreLabel" text="Cool Score: " left="8"/>
+					<Label id="score" text="35.6"/>
+					<Label id="statBegin" text=" ("/>
+					<Label id="win" text="4"/>
+					<Label id="winText" text=" wins / "/>
+					<Label id="loss" text="0"/>
+					<Label id="lossText" text=" losses)"/>
+				</View>
+				<TableView id="commentScroller"  separatorColor="#FFFFFF"/>
+				<View bottom="0" height="40"   backgroundColor='#E9E9E9'>
+					<TextField id="commentField" platform="android" autocorrect="false" hintText="Search" left="10" height="35" top="2" bottom="3" right="90" borderRadius="30" backgroundColor='#FFF'></TextField>
+					<Button id="postButton" onClick="postComment" ></Button>
+				</View>
+			</View>
+		</ScrollView>
+		<View class="bottomBar">
+			<View width="Ti.UI.SIZE" id="bottomBarButtons"
+			layout="horizontal">
+				<Button top="7" left="20" width="25" height="25"  backgroundImage="/images/icon_fav.png" onClick="favThisThing" />
+				<Button top="7"  left="20" width="31" height="25"  backgroundImage="/images/icon_email.png"/>
+				<Button top="7"  left="20" width="20" height="25"  backgroundImage="/images/icon_flag.png" onClick="flagThisThing"/>
+				<Button top="7"  left="20" width="26" height="25"  id="cartButton" backgroundImage="/images/icon_cart.png"/>
+			</View>
+		</View>
+	</Window>
+</Alloy>

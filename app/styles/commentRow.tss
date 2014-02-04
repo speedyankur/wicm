@@ -1,0 +1,14 @@
+
+".username" : {
+  color: '#4f4f4f',
+	font: {
+		fontSize: '14',
+		fontWeight: 'bold'
+	}
+},
+".usercomment" : {
+	color: '#808080',
+	font: {
+		fontSize: '14'
+	}
+}

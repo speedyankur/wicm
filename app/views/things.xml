@@ -1,0 +1,18 @@
+<Alloy>
+
+	<View id="coolest" layout="vertical" bottom="45" onTouchmove="onTouchmove" onTouchstart="onTouchstart" onTouchend="onTouchend" onSwipe="onSwipe" >
+		<!--
+		<View top="1" height="50"   backgroundColor='#E9E9E9'>
+			<TextField platform="android" autocorrect="false" hintText="Search" left="10" height="35" top="7" bottom="7" right="90" borderRadius="30" backgroundColor='#FFF'></TextField>
+			<TextField platform="ios" clearButtonMode="Titanium.UI.INPUT_BUTTONMODE_ONFOCUS" autocorrect="false" hintText="Search" paddingLeft="20" left="10" height="30" top="10" bottom="10" right="90" 
+				borderRadius="15" backgroundColor='#FFF'></TextField>
+			<Button id="searchButton" ></Button>
+		</View>
+		-->
+		<ScrollView id='scrollView' layout="horizontal" >
+			<View id="col1" width="45%" layout="vertical"></View>
+			<View id="col2" width="55%" layout="vertical"></View>
+
+		</ScrollView>
+	</View>
+</Alloy>

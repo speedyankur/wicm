@@ -1,0 +1,28 @@
+<Alloy   autoStyle="true">
+	<View id="portrait" class="landscape portrait">
+		<View id="thing1" class="thing">
+			<ImageView id="img1" top="0" left="0"  bottom="0" right="0" onDoubletap="showFullImage" onSingletap="voteMe" 
+				onTouchstart="Alloy.Globals.objectOpacityOnFocused" 
+				onTouchend="Alloy.Globals.objectOpacityOnBlurred"
+				/>
+			<Button id="flag1" class="flagbasic flag" onClick="flagThisThing" />
+			<Button id="info1" class="infobasic info" onClick="goToDetailThing"/>
+			<View class="scoreCard" id="scoreCard1" >
+				<Label id="score1" class="thingScore"></Label>
+				<Label id="winslose1" class="thingWinsLose"></Label>
+			</View>
+		</View>
+		<View id="thing2" class="thing">
+			<ImageView id="img2" top="0" left="0" bottom="0" right="0" onDoubletap="showFullImage" onSingletap="voteMe" 
+				onTouchstart="Alloy.Globals.objectOpacityOnFocused" 
+				onTouchend="Alloy.Globals.objectOpacityOnBlurred"
+				/>
+			<Button id="flag2" class="flagbasic flag" onClick="flagThisThing" />
+			<Button id="info2" class="infobasic info" onClick="goToDetailThing" />
+			<View class="scoreCard" id="scoreCard2" >
+				<Label id="score2" class="thingScore"></Label>
+				<Label id="winslose2" class="thingWinsLose"></Label>
+			</View>
+		</View>
+	</View>
+</Alloy>

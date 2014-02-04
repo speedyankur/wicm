@@ -1,0 +1,2 @@
+Renamed top level directory “wicm” from “WhichIsCooler”
+Ran git init while in wicm directory

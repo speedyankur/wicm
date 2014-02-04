@@ -1,0 +1,6 @@
+<Alloy>
+	<TableViewRow id="row">
+		<Label id="filterLabel"> </Label>
+		<Button id="filterEdit" ></Button>
+	</TableViewRow>
+</Alloy>

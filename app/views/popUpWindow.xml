@@ -1,0 +1,10 @@
+<Alloy>
+	<Window id="popupWindow"    navBarHidden="true" >
+		<View top="5" bottom="5" left="5" right="5" backgroundColor="#fff" layout="vertical" borderRadius="5">
+			<Label top="50" id="label"></Label>
+			<Button top="20" left="20" right="20" id="but1" backgroundColor="#30D1F4" backgroundSelectedColor="#000"></Button>
+			<Button top="10" left="20" right="20" id="but2" backgroundColor="#808080" backgroundSelectedColor="#000" ></Button>			
+		</View>
+		
+	</Window>
+</Alloy>

@@ -1,0 +1,31 @@
+<Alloy>
+	<Window id="window" backgroundColor="#FFF" modal="false"  navBarHidden="true">
+		<View id="navview">			
+			<Label id="viewHeaderLabel">Which thing?</Label>
+			<Button right="10" id="cancel" backgroundColor="#30D1F4" backgroundSelectedColor="#000" title="Cancel" width="60" onClick="goBack"></Button>			
+		</View>
+		<ScrollView layout="vertical" top="60">
+			<ImageView image="/images/thing1.png" 
+				onClick="postIt" 
+				onTouchstart="Alloy.Globals.objectOpacityOnFocused" 
+				onTouchend="Alloy.Globals.objectOpacityOnBlurred" ></ImageView>
+			<ImageView image="/images/thing2.png" onClick="postIt" 
+				onTouchstart="Alloy.Globals.objectOpacityOnFocused" 
+				onTouchend="Alloy.Globals.objectOpacityOnBlurred" ></ImageView>
+			<ImageView image="/images/thing1.png" onClick="postIt" 
+				onTouchstart="Alloy.Globals.objectOpacityOnFocused" 
+				onTouchend="Alloy.Globals.objectOpacityOnBlurred" ></ImageView>
+			<ImageView image="/images/thing2.png" onClick="postIt" 
+				onTouchstart="Alloy.Globals.objectOpacityOnFocused" 
+				onTouchend="Alloy.Globals.objectOpacityOnBlurred" ></ImageView>
+			<ImageView image="/images/thing1.png" onClick="postIt" 
+				onTouchstart="Alloy.Globals.objectOpacityOnFocused" 
+				onTouchend="Alloy.Globals.objectOpacityOnBlurred" ></ImageView>
+			<ImageView image="/images/thing2.png" onClick="postIt" 
+				onTouchstart="Alloy.Globals.objectOpacityOnFocused" 
+				onTouchend="Alloy.Globals.objectOpacityOnBlurred" ></ImageView>
+			
+		</ScrollView>
+
+	</Window>
+</Alloy>

@@ -1,0 +1,5 @@
+<Alloy>
+	<View id="notice">
+		<TableView id="tableView"  separatorColor="#fff"></TableView>
+	</View>
+</Alloy>

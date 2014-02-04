@@ -1,0 +1,6 @@
+<Alloy>
+	<View class="container" layout="vertical">
+		<ImageView id="thingImage" with="100%" />
+		<Label id="thingScore"></Label>
+	</View>
+</Alloy>

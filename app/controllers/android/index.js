@@ -1,0 +1,1 @@
+$.discover.getView().open();

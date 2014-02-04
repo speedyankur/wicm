@@ -1,0 +1,42 @@
+
+"#leftButton": {
+	backgroundImage: "/images/btn_back.png",
+	left: "15",
+	top: "15",
+	width: "10",
+	height: "14"
+}
+
+"Button":{
+	color: '#fff',
+	font: {
+		fontSize: '15',
+		fontFamily: 'Helvetica Neue'
+	},
+	borderRadius: "5",
+	backgroundImage: "none",
+	backgroundSelectedImage: "none",
+	height: "30"
+},
+
+"#column1":{
+	width: "40%"
+},
+"#column2":{
+	width: "60%"
+},
+"#label":{
+	color: "#808080",
+	font: {
+		fontSize: '15',
+		fontFamily: 'Helvetica Neue'
+	}
+}
+"#value":{
+	color: "#30D1F4",
+	font: {
+		fontSize: '15',
+		fontFamily: 'Helvetica Neue'
+	}
+}
+
