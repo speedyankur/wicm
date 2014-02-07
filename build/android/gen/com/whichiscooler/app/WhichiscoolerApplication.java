@@ -33,6 +33,8 @@ public final class WhichiscoolerApplication extends TiApplication
 		postAppInfo();
 
 
+	    KrollAssetHelper.setAssetCrypt(new AssetCryptImpl());
+
 
 		V8Runtime runtime = new V8Runtime();
 
@@ -43,32 +45,6 @@ public final class WhichiscoolerApplication extends TiApplication
 		stylesheet = new ApplicationStylesheet();
 		postOnCreate();
 
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
 
 	
 

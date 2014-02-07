@@ -17,16 +17,16 @@ Alloy.Globals.currentMatchIndex = -1;
 Alloy.Collections.filters = Alloy.createCollection('filter');
 Alloy.Globals.activeFilterRowColor = '#CCDDE4';
 Alloy.Globals.normalFilterRowColor = '#eef5f8';
-Alloy.Globals.activeFilterRow
+Alloy.Globals.activeFilterRow;
 Alloy.Globals.selectedFilter = -1;
 Alloy.Globals.setSelectedFilter = function(selectedFilter) {
 	Alloy.Globals.selectedFilter = selectedFilter;
 	Titanium.App.Properties.setInt('selectedFilter', selectedFilter);
-}
+};
 Alloy.Globals.getSelectedFilter = function() {
 	Alloy.Globals.selectedFilter = Titanium.App.Properties.getInt('selectedFilter');
 	return Alloy.Globals.selectedFilter;
-}
+};
 if (!Titanium.App.Properties.getInt('settingsLoaded')) {
 	Alloy.Globals.setSelectedFilter(1);
 	Titanium.App.Properties.setInt('settingsLoaded', true);
@@ -47,7 +47,7 @@ Alloy.Globals.isiOS7Plus = function() {
 		}
 	}
 	return false;
-}
+};
 /*
  * Common Loading bar
  */
@@ -136,7 +136,7 @@ Alloy.Globals.objectOpacityOnBlurred = function(e) {
 };
 
 Alloy.Globals.parseURL = function(url) {
-	parsed_url = {}
+	parsed_url = {};
 	if (url == null || url.length == 0)
 		return parsed_url;
 	protocol_i = url.indexOf('://');
@@ -146,7 +146,7 @@ Alloy.Globals.parseURL = function(url) {
 	domain_i = domain_i == -1 ? remaining_url.length - 1 : domain_i;
 	parsed_url.domain = remaining_url.substr(0, domain_i);
 	return parsed_url.domain;
-}
+};
 /*
  * Login First
  */
@@ -178,16 +178,16 @@ Alloy.Globals.loginFirst = function(callback) {
 	};
 	var popUpWindow = Alloy.createController('popUpWindow', nxtArgs).getView();
 	popUpWindow.open();
-}
+};
 
-Date.prototype.format = function(format)//author: meizz
+Date.prototype.format = function(format) {//author: meizz
 {
 	var hours = this.getHours();
 	var ttime = "AM";
 	if (format.indexOf("t") > -1 && hours > 12) {
 		hours = hours - 12;
 		ttime = "PM";
-	}
+	};
 
 	var o = {
 		"M+" : this.getMonth() + 1, //month

@@ -1,0 +1,1 @@
+module.exports=[{isApi:!0,priority:1000.0067,key:"TextField",style:{color:"#808080"}},{isId:!0,priority:100000.0066,key:"searchButton",style:{backgroundImage:"/images/btn_search.png",width:"60",height:"30",top:"10",bottom:"10",right:"10"}}];

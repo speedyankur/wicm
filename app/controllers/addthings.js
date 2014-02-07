@@ -7,7 +7,7 @@ row.height = "50";
 data.push(row);
 
 args = {};
-args.title = "Choose an existing photo";
+args.title = "Choose an existing photo.";
 args.action = "GALLERY";
 var row = Alloy.createController('peopleRowItem', args).getView();
 row.height = "50";
@@ -20,8 +20,8 @@ var row = Alloy.createController('peopleRowItem', args).getView();
 row.height = "50";
 data.push(row);
 function nowPostImage(imageData){
-	var args ={}
-	args.image = imageData
+	var args ={};
+	args.image = imageData;
 	var postImageWindow = Alloy.createController('postImageWindow',args).getView();
 
 	if (OS_IOS)
@@ -37,7 +37,7 @@ $.tableView.addEventListener("click", function(e) {
 		case "CAMERA":
 			Titanium.Media.showCamera({
 				success : function(event) {
-					nowPostImage(event.media)
+					nowPostImage(event.media);
 				},
 				cancel : function() {
 
@@ -51,7 +51,7 @@ $.tableView.addEventListener("click", function(e) {
 		case "GALLERY":
 			Titanium.Media.openPhotoGallery({
 				success : function(event) {
-					nowPostImage(event.media)
+					nowPostImage(event.media);
 				},
 				cancel : function() {
 				},

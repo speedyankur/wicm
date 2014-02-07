@@ -32,7 +32,7 @@ function loadMyThings() {
 			Ti.API.info("got some error");
 			Alloy.Globals.loading.hide();
 
-		}
+		};
 	} else {
 		Alloy.Globals.loginFirst(loadMyThings);
 	}

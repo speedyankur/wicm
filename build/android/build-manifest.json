@@ -1,6 +1,6 @@
 {
-	"target": "emulator",
-	"deployType": "development",
+	"target": "device",
+	"deployType": "test",
 	"classname": "Whichiscooler",
 	"platformPath": "/Users/mrstnmddx/Library/Application Support/Titanium/mobilesdk/osx/3.2.0.GA/android",
 	"modulesHash": "d41d8cd98f00b204e9800998ecf8427e",
@@ -21,12 +21,12 @@
 	"fullscreen": false,
 	"navbar-hidden": false,
 	"skipJSMinification": true,
-	"encryptJS": false,
+	"encryptJS": true,
 	"minSDK": 10,
 	"targetSDK": 19,
-	"propertiesHash": "22799449d86bb70bbda409055ebd642e",
+	"propertiesHash": "9c9bc0f26183e53cf9040958a2995d97",
 	"activitiesHash": "d41d8cd98f00b204e9800998ecf8427e",
 	"servicesHash": "d41d8cd98f00b204e9800998ecf8427e",
 	"jssFilesHash": "d41d8cd98f00b204e9800998ecf8427e",
-	"jarLibHash": "4548d274a5a26f475076c4a1625756fb"
+	"jarLibHash": "97b39d9a539074caf60d186ebe0eea7d"
 }

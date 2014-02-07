@@ -68,23 +68,23 @@ function voteMe(e) {
 	if (matchup) {
 		$.score1.text = isNaN(parseFloat(matchup.thing1.cool_score)) ? "?" : parseFloat(matchup.thing1.cool_score).toFixed(2);
 		if (isNaN(parseInt(matchup.thing1.wins)) || isNaN(parseInt(matchup.thing1.losses)))
-			$.winslose1.text = "Not enough data yet"
+			$.winslose1.text = "Not enough data yet.";
 		else
-			$.winslose1.text = matchup.thing1.wins + " wins / " + matchup.thing1.losses + " losses"
+			$.winslose1.text = matchup.thing1.wins + " wins / " + matchup.thing1.losses + " losses";
 		$.scoreCard1.visible = true;
 
 		$.score2.text = isNaN(parseFloat(matchup.thing2.cool_score)) ? "?" : parseFloat(matchup.thing2.cool_score).toFixed(2);
 		;
 		if (isNaN(parseInt(matchup.thing2.wins)) || isNaN(parseInt(matchup.thing2.losses)))
-			$.winslose2.text = "Not enough data yet"
+			$.winslose2.text = "Not enough data yet.";
 		else
-			$.winslose2.text = matchup.thing2.wins + " wins / " + matchup.thing2.losses + " losses"
+			$.winslose2.text = matchup.thing2.wins + " wins / " + matchup.thing2.losses + " losses";
 		$.scoreCard2.visible = true;
 
-		var data = {}
+		var data = {};
 		data["losing_thing_id"] = e.source.loosingId;
 		data["winning_thing_id"] = e.source.winningId;
-		Ti.API.info(JSON.stringify(data))
+		Ti.API.info(JSON.stringify(data));
 		Alloy.Globals.loading.show('Voting, Please wait..', true);
 
 		var xhr = Ti.Network.createHTTPClient();
@@ -95,7 +95,7 @@ function voteMe(e) {
 				Ti.Gesture.removeEventListener("orientationchange", applyOrientiation);
 			setTimeout(function() {
 				Alloy.Globals.fetchNextMatch();
-			}, Alloy.Globals.votingIdealTimer)
+			}, Alloy.Globals.votingIdealTimer);
 			Alloy.Globals.loading.hide();
 		};
 		xhr.onerror = function(e) {

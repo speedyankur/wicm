@@ -17,7 +17,7 @@ public final class WhichiscoolerAppInfo implements ITiAppInfo
 	}
 
 	public String getDeployType() {
-		return "development";
+		return "test";
 	}
 
 	public String getId() {

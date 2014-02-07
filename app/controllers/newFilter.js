@@ -28,7 +28,7 @@ var filterData = {
 	toys : false,
 	weddings : false,
 	women : false
-}
+};
 
 var tags = [{
 	key : "animals",

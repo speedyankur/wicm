@@ -1,7 +1,7 @@
 var iOS7 = Alloy.Globals.isiOS7Plus();
 $.window.top  = iOS7 ? 20 : 0;
 Ti.UI.setBackgroundColor('#E9E9E9');
-var args = arguments[0] || {}
+var args = arguments[0] || {};
 if (args.image)
 	$.selectedImage.image = args.image;
 

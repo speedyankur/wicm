@@ -1,0 +1,6 @@
+"/Users/mrstnmddx/wicm/build/android/gen/com/whichiscooler/app/ApplicationStylesheet.java"
+"/Users/mrstnmddx/wicm/build/android/gen/com/whichiscooler/app/AssetCryptImpl.java"
+"/Users/mrstnmddx/wicm/build/android/gen/com/whichiscooler/app/R.java"
+"/Users/mrstnmddx/wicm/build/android/gen/com/whichiscooler/app/WhichiscoolerActivity.java"
+"/Users/mrstnmddx/wicm/build/android/gen/com/whichiscooler/app/WhichiscoolerAppInfo.java"
+"/Users/mrstnmddx/wicm/build/android/gen/com/whichiscooler/app/WhichiscoolerApplication.java"

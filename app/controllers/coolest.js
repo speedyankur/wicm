@@ -26,11 +26,12 @@ xhr.onload = function(e) {
 	Alloy.Globals.loading.hide();
 
 };
+
 xhr.onerror = function(e) {
 	Ti.API.info("got some error");
 	Alloy.Globals.loading.hide();
 
-}
+};
 
 function onTouchmove(e) {
 	e.cancelBubble = true;

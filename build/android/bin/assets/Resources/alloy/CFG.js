@@ -1,1 +1,0 @@
-/Users/mrstnmddx/wicm/Resources/android/alloy/CFG.js

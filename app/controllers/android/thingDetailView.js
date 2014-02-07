@@ -45,7 +45,7 @@ function applyOrientiation() {
 		$.removeClass($.portrait, "portrait");
 		$.thing.height = deviceheight - 20 - 44 - 40;
 		$.thing.width = "50%";
-		$.detail.width = "50%"
+		$.detail.width = "50%";
 
 		$.commentScroller.height = deviceheight - 20 - 44 - 18 - 20 - 18 - 40
 				- 40;
@@ -99,7 +99,7 @@ if (args.thing) {
 		}
 	}
 
-	var labelText = ""
+	var labelText = "";
 	labelText = labelText
 			+ (args.thing.user == null ? "" : "Posted by "
 					+ args.thing.user.name);
