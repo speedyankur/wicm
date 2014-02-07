@@ -12,14 +12,14 @@ function Controller() {
         bottom: "45"
     });
     $.__views.find && $.addTopLevelView($.__views.find);
-    $.__views.__alloyId35 = Ti.UI.createView({
+    $.__views.__alloyId33 = Ti.UI.createView({
         top: "1",
         height: "50",
         backgroundColor: "#E9E9E9",
-        id: "__alloyId35"
+        id: "__alloyId33"
     });
-    $.__views.find.add($.__views.__alloyId35);
-    $.__views.__alloyId36 = Ti.UI.createTextField({
+    $.__views.find.add($.__views.__alloyId33);
+    $.__views.__alloyId34 = Ti.UI.createTextField({
         color: "#808080",
         autocorrect: "false",
         hintText: "Search",
@@ -30,9 +30,9 @@ function Controller() {
         right: "90",
         borderRadius: "30",
         backgroundColor: "#FFF",
-        id: "__alloyId36"
+        id: "__alloyId34"
     });
-    $.__views.__alloyId35.add($.__views.__alloyId36);
+    $.__views.__alloyId33.add($.__views.__alloyId34);
     $.__views.searchButton = Ti.UI.createButton({
         backgroundImage: "/images/btn_search.png",
         width: "60",
@@ -42,7 +42,7 @@ function Controller() {
         right: "10",
         id: "searchButton"
     });
-    $.__views.__alloyId35.add($.__views.searchButton);
+    $.__views.__alloyId33.add($.__views.searchButton);
     $.__views.tableView = Ti.UI.createTableView({
         id: "tableView",
         separatorColor: "#fff"

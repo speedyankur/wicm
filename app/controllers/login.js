@@ -22,12 +22,12 @@ function loginNow() {
 	xhr.onerror = function(e) {
 		Alloy.Globals.loading.hide();	
 		if (this.status == 0) {
-			alert("Network not avaiable, please try again later");
+			alert("Hmm. Network not avaiable. :(");
 		} else if (this.status == 2) {
-			alert("The request timed out, please try again later");
+			alert("The request timed out. :(");
 		} else if (this.status == 500 || this.status == 404) {
 			animation.shake($.fieldsView_p, 500, function(e){
-				alert("Invalid Email/Password, please try again");
+				alert("Something wasn't right.");
 			});
 		}
 
@@ -52,7 +52,7 @@ function closingWindowAnimationforAndroid() {
 	});
 }
 
-/*
+
 $.email_p.addEventListener('focus', function(){
 $.email_p.borderColor = "#519dba";
 $.emailIcon.image = "/images/email_icon_focus.png";
@@ -78,7 +78,7 @@ $.pass.addEventListener('blur', function(){
 $.pass.borderColor = "#ccc";
 $.passIcon.image = "/images/pass_icon.png";
 });
-*/
+
 
 //Add our main Orientation Event listener
 Ti.Gesture.addEventListener("orientationchange", applyOrientiation);

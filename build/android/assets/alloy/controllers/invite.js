@@ -10,31 +10,31 @@ function Controller() {
         id: "invite"
     });
     $.__views.invite && $.addTopLevelView($.__views.invite);
-    $.__views.__alloyId45 = Ti.UI.createView({
+    $.__views.__alloyId43 = Ti.UI.createView({
         height: "52",
         width: Ti.UI.SIZE,
         top: "50",
         layout: "horizontal",
-        id: "__alloyId45"
+        id: "__alloyId43"
     });
-    $.__views.invite.add($.__views.__alloyId45);
-    $.__views.__alloyId46 = Ti.UI.createButton({
+    $.__views.invite.add($.__views.__alloyId43);
+    $.__views.__alloyId44 = Ti.UI.createButton({
         backgroundSelectedImage: "/images/fb_icon_sel.png",
         width: "52",
         height: "52",
         backgroundImage: "/images/fb_icon.png",
-        id: "__alloyId46"
+        id: "__alloyId44"
     });
-    $.__views.__alloyId45.add($.__views.__alloyId46);
-    $.__views.__alloyId47 = Ti.UI.createButton({
+    $.__views.__alloyId43.add($.__views.__alloyId44);
+    $.__views.__alloyId45 = Ti.UI.createButton({
         backgroundSelectedImage: "/images/twt_icon_sel.png",
         width: "52",
         height: "52",
         left: "32",
         backgroundImage: "/images/twt_icon.png",
-        id: "__alloyId47"
+        id: "__alloyId45"
     });
-    $.__views.__alloyId45.add($.__views.__alloyId47);
+    $.__views.__alloyId43.add($.__views.__alloyId45);
     exports.destroy = function() {};
     _.extend($, $.__views);
     _.extend($, exports);

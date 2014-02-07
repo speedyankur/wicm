@@ -76,8 +76,8 @@ function Controller() {
     }, {
         item: {
             header: "Settings",
-            rows: [ "Profile", "Other Settings", "Linked Accounts", "Feedback", "About", "Logout" ],
-            views: [ "profile", "otherSettings", "linkedAccounts", "feedback", "about", "logout" ]
+            rows: [ "Profile", "Linked Accounts", "Feedback", "About", "Privacy & Terms", "Logout" ],
+            views: [ "profile", "linkedAccounts", "feedback", "about", "privacy&Terms", "logout" ]
         }
     } ];
     var lastRowSelected;

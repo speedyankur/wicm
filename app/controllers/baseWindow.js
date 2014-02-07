@@ -23,8 +23,8 @@ var menuData = [{
 }, {
 	item : {
 		header : "Settings",
-		rows : ["Profile", "Other Settings", "Linked Accounts", "Feedback", "About", "Logout"],
-		views : ["profile", "otherSettings", "linkedAccounts", "feedback", "about", "logout"]
+		rows : ["Profile", /*"Other Settings",*/ "Linked Accounts", "Feedback", "About", "Privacy & Terms","Logout"],
+		views : ["profile", /*"otherSettings",*/ "linkedAccounts", "feedback", "about", "privacy&Terms", "logout"]
 	}
 }];
 

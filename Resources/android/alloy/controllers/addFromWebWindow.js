@@ -64,16 +64,16 @@ function Controller() {
         id: "viewHeaderLabel"
     });
     $.__views.navview.add($.__views.viewHeaderLabel);
-    $.__views.__alloyId11 = Ti.UI.createScrollView({
-        id: "__alloyId11"
+    $.__views.__alloyId9 = Ti.UI.createScrollView({
+        id: "__alloyId9"
     });
-    $.__views.window.add($.__views.__alloyId11);
-    $.__views.__alloyId12 = Ti.UI.createView({
+    $.__views.window.add($.__views.__alloyId9);
+    $.__views.__alloyId10 = Ti.UI.createView({
         layout: "vertical",
         backgroundColor: "#fff",
-        id: "__alloyId12"
+        id: "__alloyId10"
     });
-    $.__views.__alloyId11.add($.__views.__alloyId12);
+    $.__views.__alloyId9.add($.__views.__alloyId10);
     $.__views.desc = Ti.UI.createLabel({
         left: "10",
         right: "10",
@@ -86,8 +86,8 @@ function Controller() {
         id: "desc",
         top: "60"
     });
-    $.__views.__alloyId12.add($.__views.desc);
-    $.__views.__alloyId13 = Ti.UI.createTextField({
+    $.__views.__alloyId10.add($.__views.desc);
+    $.__views.__alloyId11 = Ti.UI.createTextField({
         top: "20",
         left: "10",
         right: "10",
@@ -99,9 +99,9 @@ function Controller() {
         borderWidth: "1",
         backgroundColor: "#FFF",
         color: "#000",
-        id: "__alloyId13"
+        id: "__alloyId11"
     });
-    $.__views.__alloyId12.add($.__views.__alloyId13);
+    $.__views.__alloyId10.add($.__views.__alloyId11);
     $.__views.paste = Ti.UI.createButton({
         color: "#fff",
         font: {
@@ -120,16 +120,16 @@ function Controller() {
         title: "Paste",
         width: "150"
     });
-    $.__views.__alloyId12.add($.__views.paste);
-    $.__views.__alloyId14 = Ti.UI.createView({
+    $.__views.__alloyId10.add($.__views.paste);
+    $.__views.__alloyId12 = Ti.UI.createView({
         height: "50",
         bottom: "0",
         backgroundColor: "#E7E7E7",
         left: "0",
         right: "0",
-        id: "__alloyId14"
+        id: "__alloyId12"
     });
-    $.__views.__alloyId11.add($.__views.__alloyId14);
+    $.__views.__alloyId9.add($.__views.__alloyId12);
     $.__views.next = Ti.UI.createButton({
         color: "#fff",
         font: {
@@ -147,7 +147,7 @@ function Controller() {
         title: "Next",
         width: "150"
     });
-    $.__views.__alloyId14.add($.__views.next);
+    $.__views.__alloyId12.add($.__views.next);
     next ? $.__views.next.addEventListener("click", next) : __defers["$.__views.next!click!next"] = true;
     exports.destroy = function() {};
     _.extend($, $.__views);

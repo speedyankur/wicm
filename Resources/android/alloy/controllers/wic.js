@@ -24,16 +24,16 @@ function Controller() {
     onTouchmove ? $.__views.wic.addEventListener("touchmove", onTouchmove) : __defers["$.__views.wic!touchmove!onTouchmove"] = true;
     onTouchstart ? $.__views.wic.addEventListener("touchstart", onTouchstart) : __defers["$.__views.wic!touchstart!onTouchstart"] = true;
     onTouchend ? $.__views.wic.addEventListener("touchend", onTouchend) : __defers["$.__views.wic!touchend!onTouchend"] = true;
-    var __alloyId118 = [];
-    $.__views.__alloyId119 = Alloy.createController("wicMatch", {
-        id: "__alloyId119",
+    var __alloyId120 = [];
+    $.__views.__alloyId121 = Alloy.createController("wicMatch", {
+        id: "__alloyId121",
         __parentSymbol: __parentSymbol
     });
-    __alloyId118.push($.__views.__alloyId119.getViewEx({
+    __alloyId120.push($.__views.__alloyId121.getViewEx({
         recurse: true
     }));
     $.__views.scrollableView = Ti.UI.createScrollableView({
-        views: __alloyId118,
+        views: __alloyId120,
         id: "scrollableView",
         showPagingControl: "false"
     });

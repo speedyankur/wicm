@@ -106,7 +106,7 @@
 				height="15"/>
 			<Label platform="android" 
 				top="20"
-				html="By continuing you confirm that you've read and accept the <u style='color#519dba'>Terms of Service</u>"
+				html="By continuing you confirm that you've read and accept the <u style='color#519dba'>Privacy and Terms</u>"
 				color="#808080"
 				fontSize="14"
 				textAlign="center"

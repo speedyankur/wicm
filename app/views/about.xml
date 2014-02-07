@@ -13,23 +13,19 @@
 			<Label class="title"
 				text="Rules of Whichiscooler..."></Label>
 			<Label class="content"
-				text="1. Whichiscooler does not decide what is or isn’t cool."></Label>
+				text="1. The Golden Rule."></Label>
 			<Label class="content"
-				text="2. The Golden Rule."></Label>
+				text="2. Whichiscooler does not decide what is or isn’t cool."></Label>
 			
 			<Label class="title"
 				text="Cool Score (CS)..."></Label>
 			<Label class="content"
-				text="The Cool Score combines clicks with the number of times a thing is favorited. A user’s average Cool Score is based on all things Shared 1st by the user that also remain in his or her favorites. If a user removes something she/he Shared 1st from his/her favorites, the thing’s Cool Score no longer affects the user’s average Cool Score."></Label>
+				text="The Cool Score combines clicks with the number of times a thing is favorited (that's a word, right?). A user’s average Cool Score is based on all things Shared 1st by the user that also remain in his or her favorites. If a user removes something she/he Shared 1st from his/her favorites, the thing’s Cool Score no longer affects the user’s average Cool Score."></Label>
 				
 			<Label class="title"
 				text="How we make money…"></Label>
 			<Label class="content"
-				text="Not sure yet."></Label>
-			<Label class="content"
-				text="In the short term, we plan to make a few cents through affiliate marketing. In other words if a user purchases something she/he found using the app, Whichiscooler gets paid a small percentage of that sale."></Label>
-			<Label class="content"
-				text="Longer term, we hope to have enough users to generate meaningful data related to peoples’ perceptions of “cool.” We think that data may be valuable, but we’re not sure yet."></Label>
+				text="Hmmm. We haven't figured that one out yet."></Label>			
 			
 		</View>
 	</ScrollView>

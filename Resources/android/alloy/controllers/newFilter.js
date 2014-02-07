@@ -69,21 +69,21 @@ function Controller() {
         id: "viewHeaderLabel"
     });
     $.__views.navview.add($.__views.viewHeaderLabel);
-    $.__views.__alloyId81 = Ti.UI.createView({
+    $.__views.__alloyId79 = Ti.UI.createView({
         top: "44",
         bottom: "0",
-        id: "__alloyId81"
+        id: "__alloyId79"
     });
-    $.__views.window.add($.__views.__alloyId81);
-    $.__views.__alloyId82 = Ti.UI.createView({
+    $.__views.window.add($.__views.__alloyId79);
+    $.__views.__alloyId80 = Ti.UI.createView({
         height: "50",
         top: "0",
         backgroundColor: "#CCDDE4",
         left: "0",
         right: "0",
-        id: "__alloyId82"
+        id: "__alloyId80"
     });
-    $.__views.__alloyId81.add($.__views.__alloyId82);
+    $.__views.__alloyId79.add($.__views.__alloyId80);
     $.__views.filterName = Ti.UI.createTextField({
         id: "filterName",
         hintText: "Filter name",
@@ -98,23 +98,23 @@ function Controller() {
         backgroundColor: "#DBE7EC",
         color: "#000"
     });
-    $.__views.__alloyId82.add($.__views.filterName);
+    $.__views.__alloyId80.add($.__views.filterName);
     $.__views.tableView = Ti.UI.createTableView({
         id: "tableView",
         top: "50",
         bottom: "50",
         separatorColor: "#fff"
     });
-    $.__views.__alloyId81.add($.__views.tableView);
-    $.__views.__alloyId83 = Ti.UI.createView({
+    $.__views.__alloyId79.add($.__views.tableView);
+    $.__views.__alloyId81 = Ti.UI.createView({
         height: "50",
         bottom: "0",
         backgroundColor: "#E7E7E7",
         left: "0",
         right: "0",
-        id: "__alloyId83"
+        id: "__alloyId81"
     });
-    $.__views.__alloyId81.add($.__views.__alloyId83);
+    $.__views.__alloyId79.add($.__views.__alloyId81);
     $.__views.next = Ti.UI.createButton({
         color: "#fff",
         font: {
@@ -132,7 +132,7 @@ function Controller() {
         title: "Save",
         width: "150"
     });
-    $.__views.__alloyId83.add($.__views.next);
+    $.__views.__alloyId81.add($.__views.next);
     save ? $.__views.next.addEventListener("click", save) : __defers["$.__views.next!click!save"] = true;
     exports.destroy = function() {};
     _.extend($, $.__views);

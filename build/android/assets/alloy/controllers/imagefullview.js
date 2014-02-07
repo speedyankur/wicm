@@ -22,21 +22,21 @@ function Controller() {
         width: Ti.UI.FILL
     });
     $.__views.imageFullview.add($.__views.fullImage);
-    $.__views.__alloyId44 = Ti.UI.createButton({
+    $.__views.__alloyId42 = Ti.UI.createButton({
         right: "10",
         top: "10",
         width: "32",
         height: "32",
         backgroundImage: "/images/btn_cancel.png",
-        id: "__alloyId44"
+        id: "__alloyId42"
     });
-    $.__views.imageFullview.add($.__views.__alloyId44);
-    closeFullView ? $.__views.__alloyId44.addEventListener("click", closeFullView) : __defers["$.__views.__alloyId44!click!closeFullView"] = true;
+    $.__views.imageFullview.add($.__views.__alloyId42);
+    closeFullView ? $.__views.__alloyId42.addEventListener("click", closeFullView) : __defers["$.__views.__alloyId42!click!closeFullView"] = true;
     exports.destroy = function() {};
     _.extend($, $.__views);
     var args = arguments[0] || {};
     $.fullImage.image = args.image;
-    __defers["$.__views.__alloyId44!click!closeFullView"] && $.__views.__alloyId44.addEventListener("click", closeFullView);
+    __defers["$.__views.__alloyId42!click!closeFullView"] && $.__views.__alloyId42.addEventListener("click", closeFullView);
     _.extend($, exports);
 }
 
