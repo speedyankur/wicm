@@ -73,8 +73,7 @@ if (args.thing) {
 	Ti.API.info("thing--" + JSON.stringify(args.thing));
 	var createdDate = new Date(args.thing.created_at);
 	$.thingImage.image = args.thing.url;
-	$.imageLabel.text = args.thing.description == null ? ""
-			: args.thing.description;
+	$.imageLabel.text = args.thing.description == null ? "" : args.thing.description;
 	$.price.text = args.thing.buy_it == null ? "" : args.thing.buy_it;
 	$.score.text = args.thing.cool_score == null ? "" : parseFloat(
 			args.thing.cool_score).toFixed(2);
@@ -239,11 +238,11 @@ function flagThisThing(e) {
 	var thingId = args.thing.id;
 	if (thingId) {
 		var nxtArgs = {};
-		nxtArgs.popUpLabel = "Confirm as inappropriate";
+		nxtArgs.popUpLabel = "Confirm as inappropriate?";
 		nxtArgs.but1Label = "Confirm";
 		nxtArgs.but2label = "Cancel";
 		nxtArgs.but1handler = function() {
-			Alloy.Globals.loading.show('Flagging now, Please wait..', true);
+			Alloy.Globals.loading.show("You won't see this again.", true);
 			Alloy.Globals.removeCurrentMatch();
 			var xhr = Ti.Network.createHTTPClient();
 			xhr.open('POST', Alloy.Globals.serverPath + '/api/things/' + thingId + '/flag');

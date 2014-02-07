@@ -227,7 +227,7 @@ function flagThisThing(e) {
 	var thingId = args.thing.id;
 	if (thingId) {
 		var nxtArgs = {};
-		nxtArgs.popUpLabel = "Confirm as inappropriate";
+		nxtArgs.popUpLabel = "Confirm as inappropriate?";
 		nxtArgs.but1Label = "Confirm";
 		nxtArgs.but2label = "Cancel";
 		nxtArgs.but1handler = function() {

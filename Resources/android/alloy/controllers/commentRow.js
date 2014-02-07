@@ -64,7 +64,6 @@ function Controller() {
     } else {
         $.picView.visible = false;
         $.username.text = "";
-        $.comment.text = "Sorry, No Comments available";
     }
     _.extend($, exports);
 }

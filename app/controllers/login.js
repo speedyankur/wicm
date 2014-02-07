@@ -8,7 +8,7 @@ function loginNow() {
 	//var username = "test@gmail.com";
 	//var password = "test123";
 	var data = "auth_key=" + Ti.Network.encodeURIComponent(username) + "&password=" + password;
-	Alloy.Globals.loading.show('Login now, Please wait..', true);
+	Alloy.Globals.loading.show('Logging in...', true);
 	var xhr = Ti.Network.createHTTPClient();
 	xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 	xhr.open('POST', "http://limitless-eyrie-1080.herokuapp.com/auth/identity/callback/");

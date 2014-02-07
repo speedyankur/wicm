@@ -118,11 +118,11 @@ function Controller() {
         var thingId = args.thing.id;
         if (thingId) {
             var nxtArgs = {};
-            nxtArgs.popUpLabel = "Confirm as inappropriate";
+            nxtArgs.popUpLabel = "Confirm as inappropriate?";
             nxtArgs.but1Label = "Confirm";
             nxtArgs.but2label = "Cancel";
             nxtArgs.but1handler = function() {
-                Alloy.Globals.loading.show("Flagging now, Please wait..", true);
+                Alloy.Globals.loading.show("You won't see this again.", true);
                 Alloy.Globals.removeCurrentMatch();
                 var xhr = Ti.Network.createHTTPClient();
                 xhr.open("POST", Alloy.Globals.serverPath + "/api/things/" + thingId + "/flag");
@@ -252,7 +252,7 @@ function Controller() {
         right: 5,
         color: "#fff",
         font: {
-            fontSize: "14"
+            fontSize: "16"
         },
         horizontalWrap: true,
         apiName: "Ti.UI.Label",
@@ -281,7 +281,7 @@ function Controller() {
     $.__views.imageLabel = Ti.UI.createLabel({
         color: "#808080",
         font: {
-            fontSize: "14"
+            fontSize: "16"
         },
         apiName: "Ti.UI.Label",
         id: "imageLabel",
@@ -294,7 +294,7 @@ function Controller() {
     $.__views.hypen = Ti.UI.createLabel({
         color: "#808080",
         font: {
-            fontSize: "14"
+            fontSize: "16"
         },
         apiName: "Ti.UI.Label",
         id: "hypen",
@@ -306,7 +306,7 @@ function Controller() {
     $.__views.price = Ti.UI.createLabel({
         color: "#808080",
         font: {
-            fontSize: "14"
+            fontSize: "16"
         },
         apiName: "Ti.UI.Label",
         id: "price",
@@ -338,7 +338,7 @@ function Controller() {
     $.__views.scoreLabel = Ti.UI.createLabel({
         color: "#4f4f4f",
         font: {
-            fontSize: "14",
+            fontSize: "16",
             fontWeight: "bold"
         },
         apiName: "Ti.UI.Label",
@@ -351,7 +351,7 @@ function Controller() {
     $.__views.score = Ti.UI.createLabel({
         color: "#1683af",
         font: {
-            fontSize: "14",
+            fontSize: "16",
             fontWeight: "bold"
         },
         apiName: "Ti.UI.Label",
@@ -363,7 +363,7 @@ function Controller() {
     $.__views.statBegin = Ti.UI.createLabel({
         color: "#808080",
         font: {
-            fontSize: "14"
+            fontSize: "16"
         },
         apiName: "Ti.UI.Label",
         id: "statBegin",
@@ -374,7 +374,7 @@ function Controller() {
     $.__views.win = Ti.UI.createLabel({
         color: "#808080",
         font: {
-            fontSize: "14"
+            fontSize: "16"
         },
         apiName: "Ti.UI.Label",
         id: "win",
@@ -385,7 +385,7 @@ function Controller() {
     $.__views.winText = Ti.UI.createLabel({
         color: "#808080",
         font: {
-            fontSize: "14"
+            fontSize: "16"
         },
         apiName: "Ti.UI.Label",
         id: "winText",
@@ -396,7 +396,7 @@ function Controller() {
     $.__views.loss = Ti.UI.createLabel({
         color: "#808080",
         font: {
-            fontSize: "14"
+            fontSize: "16"
         },
         apiName: "Ti.UI.Label",
         id: "loss",
@@ -407,7 +407,7 @@ function Controller() {
     $.__views.lossText = Ti.UI.createLabel({
         color: "#808080",
         font: {
-            fontSize: "14"
+            fontSize: "16"
         },
         apiName: "Ti.UI.Label",
         id: "lossText",
@@ -434,12 +434,12 @@ function Controller() {
     $.__views.commentField = Ti.UI.createTextField({
         color: "#808080",
         font: {
-            fontSize: "14"
+            fontSize: "16"
         },
         apiName: "Ti.UI.TextField",
         id: "commentField",
         autocorrect: "false",
-        hintText: "Search",
+        hintText: "Comment",
         left: "10",
         height: "35",
         top: "2",

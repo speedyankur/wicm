@@ -31,7 +31,7 @@ function Controller() {
     row.height = "50";
     data.push(row);
     args = {};
-    args.title = "Choose an existing photo";
+    args.title = "Choose an existing photo.";
     args.action = "GALLERY";
     var row = Alloy.createController("peopleRowItem", args).getView();
     row.height = "50";

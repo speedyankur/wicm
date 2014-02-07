@@ -3,7 +3,7 @@ function Controller() {
         var username = $.email_p.value;
         var password = $.pass_p.value;
         var data = "auth_key=" + Ti.Network.encodeURIComponent(username) + "&password=" + password;
-        Alloy.Globals.loading.show("Login now, Please wait..", true);
+        Alloy.Globals.loading.show("Logging in...", true);
         var xhr = Ti.Network.createHTTPClient();
         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         xhr.open("POST", "http://limitless-eyrie-1080.herokuapp.com/auth/identity/callback/");

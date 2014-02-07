@@ -163,7 +163,7 @@ Alloy.Globals.loginFirst = function(callback) {
 		win.addEventListener('close', function() {
 			if (Alloy.Globals.APIKey) {
 				callback();	
-			}
+			};
 		});
 		if (OS_IOS)
 			Alloy.Globals.navgroup.open(win);
@@ -180,14 +180,14 @@ Alloy.Globals.loginFirst = function(callback) {
 	popUpWindow.open();
 };
 
-Date.prototype.format = function(format) {//author: meizz
+Date.prototype.format = function(format)//author: meizz
 {
 	var hours = this.getHours();
 	var ttime = "AM";
 	if (format.indexOf("t") > -1 && hours > 12) {
 		hours = hours - 12;
 		ttime = "PM";
-	};
+	}
 
 	var o = {
 		"M+" : this.getMonth() + 1, //month
@@ -198,7 +198,7 @@ Date.prototype.format = function(format) {//author: meizz
 		"q+" : Math.floor((this.getMonth() + 3) / 3), //quarter
 		"S" : this.getMilliseconds(), //millisecond,
 		"t+" : ttime
-	}
+	};
 
 	if (/(y+)/.test(format))
 		format = format.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
@@ -206,4 +206,4 @@ Date.prototype.format = function(format) {//author: meizz
 	if (new RegExp("(" + k + ")").test(format))
 		format = format.replace(RegExp.$1, RegExp.$1.length == 1 ? o[k] : ("00" + o[k]).substr(("" + o[k]).length));
 	return format;
-}
+};

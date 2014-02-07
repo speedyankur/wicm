@@ -32,7 +32,7 @@
 				</View>
 				<TableView id="commentScroller"  separatorColor="#FFFFFF"/>
 				<View bottom="0" height="40"   backgroundColor='#E9E9E9'>
-					<TextField id="commentField" platform="android" autocorrect="false" hintText="Search" left="10" height="35" top="2" bottom="3" right="90" borderRadius="30" backgroundColor='#FFF'></TextField>
+					<TextField id="commentField" platform="android" autocorrect="false" hintText="Comment" left="10" height="35" top="2" bottom="3" right="90" borderRadius="30" backgroundColor='#FFF'></TextField>
 					<Button id="postButton" onClick="postComment" ></Button>
 				</View>
 			</View>

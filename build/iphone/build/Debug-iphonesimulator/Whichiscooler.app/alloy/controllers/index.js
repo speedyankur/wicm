@@ -1,0 +1,1 @@
+/Users/mrstnmddx/wicm/Resources/iphone/alloy/controllers/index.js

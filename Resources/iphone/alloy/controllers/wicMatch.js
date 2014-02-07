@@ -53,10 +53,10 @@ function Controller() {
     function voteMe(e) {
         if (matchup) {
             $.score1.text = isNaN(parseFloat(matchup.thing1.cool_score)) ? "?" : parseFloat(matchup.thing1.cool_score).toFixed(2);
-            $.winslose1.text = isNaN(parseInt(matchup.thing1.wins)) || isNaN(parseInt(matchup.thing1.losses)) ? "Not enough data yet" : matchup.thing1.wins + " wins / " + matchup.thing1.losses + " losses";
+            $.winslose1.text = isNaN(parseInt(matchup.thing1.wins)) || isNaN(parseInt(matchup.thing1.losses)) ? "Not enough data yet." : matchup.thing1.wins + " wins / " + matchup.thing1.losses + " losses";
             $.scoreCard1.visible = true;
             $.score2.text = isNaN(parseFloat(matchup.thing2.cool_score)) ? "?" : parseFloat(matchup.thing2.cool_score).toFixed(2);
-            $.winslose2.text = isNaN(parseInt(matchup.thing2.wins)) || isNaN(parseInt(matchup.thing2.losses)) ? "Not enough data yet" : matchup.thing2.wins + " wins / " + matchup.thing2.losses + " losses";
+            $.winslose2.text = isNaN(parseInt(matchup.thing2.wins)) || isNaN(parseInt(matchup.thing2.losses)) ? "Not enough data yet." : matchup.thing2.wins + " wins / " + matchup.thing2.losses + " losses";
             $.scoreCard2.visible = true;
             var data = {};
             data["losing_thing_id"] = e.source.loosingId;

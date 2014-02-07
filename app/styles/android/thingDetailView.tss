@@ -48,70 +48,70 @@
 	right:5,
 	color: '#fff',
 	font: {
-		fontSize: '14'
+		fontSize: '16'
 	},
 	horizontalWrap: true
 },
 "#imageLabel": {
 	color: '#808080',
 	font: {
-		fontSize: '14'
+		fontSize: '16'
 	}
 },
 "#hypen": {
 	color: '#808080',
 	font: {
-		fontSize: '14'
+		fontSize: '16'
 	}
 },
 "#price": {
 	color: '#808080',
 	font: {
-		fontSize: '14'
+		fontSize: '16'
 	}
 },
 "#scoreLabel": {
 	color: '#4f4f4f',
 	font: {
-		fontSize: '14',
+		fontSize: '16',
 		fontWeight: 'bold'
 	}
 },
 "#score": {
 	color: '#1683af',
 	font: {
-		fontSize: '14',
+		fontSize: '16',
 		fontWeight: 'bold'
 	}
 },
 "#statBegin": {
 	color: '#808080',
 	font: {
-		fontSize: '14'
+		fontSize: '16'
 	}
 },
 "#win": {
 	color: '#808080',
 	font: {
-		fontSize: '14'
+		fontSize: '16'
 	}
 },
 "#winText": {
 	color: '#808080',
 	font: {
-		fontSize: '14'
+		fontSize: '16'
 	}
 },
 "#loss": {
 	color: '#808080',
 	font: {
-		fontSize: '14'
+		fontSize: '16'
 	}
 },
 "#lossText": {
 	color: '#808080',
 	font: {
-		fontSize: '14'
+		fontSize: '16'
 	}
 },
 ".portrait": {
@@ -168,7 +168,7 @@
 },
 "TextField":{
 	font: {
-		fontSize: '14'
+		fontSize: '16'
 	}
 }
 

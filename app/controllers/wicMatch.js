@@ -17,7 +17,7 @@ function showFullImage(e) {
 function flagThisThing(e) {
 	if (e.source.thingId) {
 		var args = {};
-		args.popUpLabel = "Confirm as inappropriate";
+		args.popUpLabel = "Confirm as inappropriate?";
 		args.but1Label = "Confirm";
 		args.but2label = "Cancel";
 		args.but1handler = function() {

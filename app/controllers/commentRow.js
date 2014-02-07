@@ -2,7 +2,7 @@ var args = arguments[0];
 if (!args) {
 	$.picView.visible = false;
 	$.username.text = "";
-	$.comment.text = "Sorry, No Comments available";
+	//$.comment.text = "Sorry, No Comments available";
 } else {
 	
 	if (args.image) {
