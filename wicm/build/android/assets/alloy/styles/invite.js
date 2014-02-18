@@ -1,1 +1,0 @@
-module.exports = [{"isClass":true,"priority":10101.0071,"key":"fbIcon","style":{backgroundSelectedImage:"/images/fb_icon_sel.png",}},{"isClass":true,"priority":10101.0072,"key":"twtIcon","style":{backgroundSelectedImage:"/images/twt_icon_sel.png",}}];

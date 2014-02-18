@@ -48,7 +48,7 @@
 						   left="8"
 						   image="/images/hrzntl1.png"/>
 			</View>
-			<View id="fieldsView_p" layout="vertical" height=Ti.UI.SIZE width=Ti.UI.FILL>	
+			<View id="fieldsView_p" layout="vertical" height="Ti.UI.SIZE" width="Ti.UI.FILL">	
 				<View height="40"
 					width="72%"
 					layout="absolute"

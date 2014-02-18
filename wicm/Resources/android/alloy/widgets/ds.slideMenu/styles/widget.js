@@ -29,7 +29,7 @@ module.exports = [ {
     key: "menuHeader",
     style: {
         height: "44dp",
-        backgroundColor: "#E9E9E9",
+        backgroundColor: "#a3a3a3",
         backgroundGradient: {
             type: "linear",
             startPoint: {
@@ -44,7 +44,7 @@ module.exports = [ {
                 color: "#FCFCFC",
                 offset: "0.0"
             }, {
-                color: "#E9E9E9",
+                color: "#a3a3a3",
                 offset: "1.0"
             } ]
         }

@@ -1,3 +1,145 @@
 Logfile initialized
-[INFO] logfile = /Users/mrstnmddx/wic mobile/WhichIsCooler/build.log
-[DEBUG] /Users/mrstnmddx/Library/Application Support/Titanium/mobilesdk/osx/3.1.3.GA/android/builder.py install Whichiscooler /Users/mrstnmddx/Desktop/Development/android-sdk-macosx /Users/mrstnmddx/wic mobile/WhichIsCooler com.whichiscooler.app 1
+[INFO] logfile = /Users/mrstnmddx/wicm/wicm/build.log
+[INFO] logfile = /Users/mrstnmddx/wicm/wicm/build.log
+[DEBUG] /Users/mrstnmddx/Library/Application Support/Titanium/mobilesdk/osx/3.1.3.GA/android/builder.py simulator Whichiscooler /Users/mrstnmddx/Desktop/Development/android-sdk-macosx /Users/mrstnmddx/wicm/wicm com.whichiscooler.app 9 WVGA854
+[DEBUG] /Users/mrstnmddx/Library/Application Support/Titanium/mobilesdk/osx/3.1.3.GA/android/builder.py emulator Whichiscooler /Users/mrstnmddx/Desktop/Development/android-sdk-macosx /Users/mrstnmddx/wicm/wicm com.whichiscooler.app 9 WVGA854 armeabi-v7a
+[INFO] Launching Android emulator...one moment
+[DEBUG] From: /Users/mrstnmddx/Desktop/Development/android-sdk-macosx/tools/emulator
+[INFO] Building Whichiscooler for Android ... one moment
+[DEBUG] SDCard: /Users/mrstnmddx/.titanium/android2.sdcard
+[DEBUG] AVD ID: 9
+[DEBUG] AVD Skin: WVGA854
+[DEBUG] AVD ABI: armeabi-v7a
+[DEBUG] SDK: /Users/mrstnmddx/Desktop/Development/android-sdk-macosx
+[INFO] plugin=/Users/mrstnmddx/Library/Application Support/Titanium/plugins/ti.alloy/3.1.3/plugin.py
+[INFO] Detected compiler plugin: ti.alloy/3.1.3
+[INFO] Titanium SDK version: 3.1.3 (09/18/13 12:00 222f4d1)
+[DEBUG] Waiting for device to be ready ...
+[TRACE] adb devices returned 2 devices/emulators
+[DEBUG] Device connected... (waited 0 seconds)
+[DEBUG] waited 0.016358 seconds on emulator to get ready
+[DEBUG] com.whichiscooler.app installed? True
+[INFO] Fastdev server running, deploying in Fastdev mode
+[INFO] Copying CommonJS modules...
+[INFO] Copying project resources..
+[INFO] Creating 64M SD card for use in Android emulator
+[INFO] Creating new Android Virtual Device (9 WVGA854)
+[INFO] Detected change in tiapp.xml, or assets deleted. Forcing full re-build...
+[DEBUG] /Users/mrstnmddx/Desktop/Development/android-sdk-macosx/tools/emulator -avd titanium_9_WVGA854 -port 5560 -sdcard /Users/mrstnmddx/.titanium/titanium_9_WVGA854.sdcard -logcat *:d,*,TiAPI:V -no-boot-anim -partition-size 128
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/alloy/animation.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/animation.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/backbone.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/backbone.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/CFG.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/CFG.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/constants.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/constants.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/about.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/about.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/accordianRows.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/accordianRows.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/accordianSectionHeaderView.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/accordianSectionHeaderView.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/addFromWebWindow.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/addFromWebWindow.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/addthings.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/addthings.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/BaseController.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/BaseController.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/baseWindow.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/baseWindow.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/commentRow.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/commentRow.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/coolest.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/coolest.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/discover.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/discover.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/editFilter.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/editFilter.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/feedback.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/feedback.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/filterRowItem.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/filterRowItem.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/filters.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/filters.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/find.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/find.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/followers.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/followers.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/following.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/following.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/imagefullview.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/imagefullview.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/index.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/index.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/invite.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/invite.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/linkedAccounts.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/linkedAccounts.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/login.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/login.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/menurow.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/menurow.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/newFilter.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/newFilter.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/notice.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/notice.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/otherSettings.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/otherSettings.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/peopleRowItem.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/peopleRowItem.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/popUpWindow.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/popUpWindow.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/post.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/post.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/postImageWindow.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/postImageWindow.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/privacyAndTerms.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/privacyAndTerms.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/profile.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/profile.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/tableSectionHeaderView.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/tableSectionHeaderView.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/tagRowItem.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/tagRowItem.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/thing.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/thing.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/thingDetailView.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/thingDetailView.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/things.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/things.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/userWindow.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/userWindow.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/whichThing.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/whichThing.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/wic.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/wic.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/controllers/wicMatch.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/controllers/wicMatch.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/models/CoolestThing.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/models/CoolestThing.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/models/Filter.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/models/Filter.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/about.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/about.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/accordianRows.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/accordianRows.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/accordianSectionHeaderView.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/accordianSectionHeaderView.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/addFromWebWindow.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/addFromWebWindow.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/addthings.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/addthings.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/baseWindow.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/baseWindow.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/commentRow.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/commentRow.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/coolest.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/coolest.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/discover.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/discover.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/editFilter.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/editFilter.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/feedback.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/feedback.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/filterRowItem.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/filterRowItem.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/filters.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/filters.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/find.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/find.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/followers.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/followers.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/following.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/following.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/imagefullview.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/imagefullview.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/index.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/index.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/invite.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/invite.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/linkedAccounts.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/linkedAccounts.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/login.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/login.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/menurow.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/menurow.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/newFilter.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/newFilter.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/notice.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/notice.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/otherSettings.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/otherSettings.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/peopleRowItem.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/peopleRowItem.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/popUpWindow.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/popUpWindow.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/post.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/post.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/postImageWindow.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/postImageWindow.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/privacyAndTerms.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/privacyAndTerms.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/profile.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/profile.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/tableSectionHeaderView.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/tableSectionHeaderView.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/tagRowItem.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/tagRowItem.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/thing.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/thing.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/thingDetailView.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/thingDetailView.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/things.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/things.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/userWindow.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/userWindow.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/whichThing.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/whichThing.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/wic.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/wic.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/styles/wicMatch.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/styles/wicMatch.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/sync/localStorage.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/sync/localStorage.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/sync/properties.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/sync/properties.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/sync/restapi.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/sync/restapi.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/sync/sql.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/sync/sql.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/underscore.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/underscore.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/widget.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/widget.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/widgets/ds.slideMenu/controllers/widget.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/widgets/ds.slideMenu/controllers/widget.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/widgets/ds.slideMenu/styles/widget.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/widgets/ds.slideMenu/styles/widget.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/widgets/nl.fokkezb.cachedImageView/controllers/widget.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/widgets/nl.fokkezb.cachedImageView/controllers/widget.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/widgets/nl.fokkezb.cachedImageView/styles/widget.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/widgets/nl.fokkezb.cachedImageView/styles/widget.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/widgets/nl.fokkezb.loading/controllers/widget.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/widgets/nl.fokkezb.loading/controllers/widget.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/widgets/nl.fokkezb.loading/controllers/window.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/widgets/nl.fokkezb.loading/controllers/window.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/widgets/nl.fokkezb.loading/styles/widget.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/widgets/nl.fokkezb.loading/styles/widget.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy/widgets/nl.fokkezb.loading/styles/window.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy/widgets/nl.fokkezb.loading/styles/window.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/alloy.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/alloy.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/app.js => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/app.js
+[TRACE] COPYING CREATED FILE: /Users/mrstnmddx/wicm/wicm/Resources/android/appicon.png => /Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/appicon.png
+[ERROR] Exception occured while building Android project:
+[ERROR] Traceback (most recent call last):
+[ERROR]   File "/Users/mrstnmddx/Library/Application Support/Titanium/mobilesdk/osx/3.1.3.GA/android/builder.py", line 2598, in <module>
+[ERROR]     builder.build_and_run(False, avd_id, debugger_host=debugger_host, profiler_host=profiler_host)
+[ERROR]   File "/Users/mrstnmddx/Library/Application Support/Titanium/mobilesdk/osx/3.1.3.GA/android/builder.py", line 2245, in build_and_run
+[ERROR]     self.copy_project_resources()
+[ERROR]   File "/Users/mrstnmddx/Library/Application Support/Titanium/mobilesdk/osx/3.1.3.GA/android/builder.py", line 923, in copy_project_resources
+[ERROR]     shutil.copy(path, dest)
+[ERROR]   File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/shutil.py", line 119, in copy
+[ERROR]     copyfile(src, dst)
+[ERROR]   File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/shutil.py", line 83, in copyfile
+[ERROR]     with open(dst, 'wb') as fdst:
+[ERROR] IOError: [Errno 2] No such file or directory: '/Users/mrstnmddx/wicm/wicm/build/android/bin/assets/Resources/appicon.png'

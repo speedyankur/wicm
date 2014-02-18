@@ -6,7 +6,7 @@
 		fontSize: 16,
 		fontWeight: 'bold'
 	}
-}
+},
 
 ".content":{
 	width: Ti.UI.FILL,
