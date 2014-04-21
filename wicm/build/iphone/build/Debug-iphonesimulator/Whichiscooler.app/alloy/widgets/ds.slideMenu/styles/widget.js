@@ -1,1 +1,0 @@
-/Users/mrstnmddx/wicm/Resources/iphone/alloy/widgets/ds.slideMenu/styles/widget.js

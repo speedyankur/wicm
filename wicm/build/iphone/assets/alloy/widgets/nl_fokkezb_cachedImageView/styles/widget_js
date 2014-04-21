@@ -1,0 +1,1 @@
+function WPATH(e){var t=e.lastIndexOf("/"),i=-1===t?"nl.fokkezb.cachedImageView/"+e:e.substring(0,t)+"/nl.fokkezb.cachedImageView/"+e.substring(t+1);return i}module.exports=[{isApi:!0,priority:1000.0018,key:"ImageView",style:{defaultImage:"/nl.fokkezb.cachedImageView/logo.png"}}];

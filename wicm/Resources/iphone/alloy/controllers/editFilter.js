@@ -88,21 +88,21 @@ function Controller() {
         id: "viewHeaderLabel"
     });
     $.__views.navview.add($.__views.viewHeaderLabel);
-    $.__views.__alloyId20 = Ti.UI.createView({
+    $.__views.__alloyId18 = Ti.UI.createView({
         top: "44",
         bottom: "0",
-        id: "__alloyId20"
+        id: "__alloyId18"
     });
-    $.__views.window.add($.__views.__alloyId20);
-    $.__views.__alloyId21 = Ti.UI.createView({
+    $.__views.window.add($.__views.__alloyId18);
+    $.__views.__alloyId19 = Ti.UI.createView({
         height: "50",
         top: "0",
         backgroundColor: "#CCDDE4",
         left: "0",
         right: "0",
-        id: "__alloyId21"
+        id: "__alloyId19"
     });
-    $.__views.__alloyId20.add($.__views.__alloyId21);
+    $.__views.__alloyId18.add($.__views.__alloyId19);
     $.__views.filterName = Ti.UI.createTextField({
         id: "filterName",
         value: "All Time Womens Fashion",
@@ -115,30 +115,30 @@ function Controller() {
         borderRadius: "5",
         backgroundColor: "#DBE7EC"
     });
-    $.__views.__alloyId21.add($.__views.filterName);
-    $.__views.__alloyId22 = Ti.UI.createImageView({
+    $.__views.__alloyId19.add($.__views.filterName);
+    $.__views.__alloyId20 = Ti.UI.createImageView({
         right: "10",
         image: "/images/icon_del.png",
-        id: "__alloyId22"
+        id: "__alloyId20"
     });
-    $.__views.__alloyId21.add($.__views.__alloyId22);
-    deleteFilter ? $.__views.__alloyId22.addEventListener("click", deleteFilter) : __defers["$.__views.__alloyId22!click!deleteFilter"] = true;
+    $.__views.__alloyId19.add($.__views.__alloyId20);
+    deleteFilter ? $.__views.__alloyId20.addEventListener("click", deleteFilter) : __defers["$.__views.__alloyId20!click!deleteFilter"] = true;
     $.__views.tableView = Ti.UI.createTableView({
         id: "tableView",
         top: "50",
         bottom: "50",
         separatorColor: "#fff"
     });
-    $.__views.__alloyId20.add($.__views.tableView);
-    $.__views.__alloyId23 = Ti.UI.createView({
+    $.__views.__alloyId18.add($.__views.tableView);
+    $.__views.__alloyId21 = Ti.UI.createView({
         height: "50",
         bottom: "0",
         backgroundColor: "#E7E7E7",
         left: "0",
         right: "0",
-        id: "__alloyId23"
+        id: "__alloyId21"
     });
-    $.__views.__alloyId20.add($.__views.__alloyId23);
+    $.__views.__alloyId18.add($.__views.__alloyId21);
     $.__views.next = Ti.UI.createButton({
         color: "#fff",
         font: {
@@ -156,7 +156,7 @@ function Controller() {
         title: "Save",
         width: "150"
     });
-    $.__views.__alloyId23.add($.__views.next);
+    $.__views.__alloyId21.add($.__views.next);
     save ? $.__views.next.addEventListener("click", save) : __defers["$.__views.next!click!save"] = true;
     exports.destroy = function() {};
     _.extend($, $.__views);
@@ -304,7 +304,7 @@ function Controller() {
         }
     });
     __defers["$.__views.leftButton!click!goBack"] && $.__views.leftButton.addEventListener("click", goBack);
-    __defers["$.__views.__alloyId22!click!deleteFilter"] && $.__views.__alloyId22.addEventListener("click", deleteFilter);
+    __defers["$.__views.__alloyId20!click!deleteFilter"] && $.__views.__alloyId20.addEventListener("click", deleteFilter);
     __defers["$.__views.next!click!save"] && $.__views.next.addEventListener("click", save);
     _.extend($, exports);
 }

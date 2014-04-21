@@ -1,18 +1,18 @@
 function Controller() {
-    function __alloyId33(e) {
+    function __alloyId31(e) {
         if (e && e.fromAdapter) return;
-        __alloyId33.opts || {};
-        var models = __alloyId32.models;
+        __alloyId31.opts || {};
+        var models = __alloyId30.models;
         var len = models.length;
         var rows = [];
         for (var i = 0; len > i; i++) {
-            var __alloyId29 = models[i];
-            __alloyId29.__transform = {};
-            var __alloyId31 = Alloy.createController("filterRowItem", {
-                $model: __alloyId29,
+            var __alloyId27 = models[i];
+            __alloyId27.__transform = {};
+            var __alloyId29 = Alloy.createController("filterRowItem", {
+                $model: __alloyId27,
                 __parentSymbol: __parentSymbol
             });
-            rows.push(__alloyId31.getViewEx({
+            rows.push(__alloyId29.getViewEx({
                 recurse: true
             }));
         }
@@ -45,17 +45,17 @@ function Controller() {
         separatorColor: "#fff"
     });
     $.__views.filters.add($.__views.tableView);
-    var __alloyId32 = Alloy.Collections["filters"] || filters;
-    __alloyId32.on("fetch destroy change add remove reset", __alloyId33);
-    $.__views.__alloyId34 = Ti.UI.createView({
+    var __alloyId30 = Alloy.Collections["filters"] || filters;
+    __alloyId30.on("fetch destroy change add remove reset", __alloyId31);
+    $.__views.__alloyId32 = Ti.UI.createView({
         height: "50",
         bottom: "0",
         backgroundColor: "#E7E7E7",
         left: "0",
         right: "0",
-        id: "__alloyId34"
+        id: "__alloyId32"
     });
-    $.__views.filters.add($.__views.__alloyId34);
+    $.__views.filters.add($.__views.__alloyId32);
     $.__views.next = Ti.UI.createButton({
         color: "#fff",
         font: {
@@ -73,10 +73,10 @@ function Controller() {
         title: "Create New Filter",
         width: "150"
     });
-    $.__views.__alloyId34.add($.__views.next);
+    $.__views.__alloyId32.add($.__views.next);
     newFilter ? $.__views.next.addEventListener("click", newFilter) : __defers["$.__views.next!click!newFilter"] = true;
     exports.destroy = function() {
-        __alloyId32.off("fetch destroy change add remove reset", __alloyId33);
+        __alloyId30.off("fetch destroy change add remove reset", __alloyId31);
     };
     _.extend($, $.__views);
     var filters = Alloy.Collections.filters;

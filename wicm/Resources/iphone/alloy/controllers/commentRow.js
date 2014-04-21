@@ -28,11 +28,11 @@ function Controller() {
         height: "35"
     });
     $.__views.picView.add($.__views.imageView);
-    $.__views.__alloyId15 = Ti.UI.createView({
+    $.__views.__alloyId13 = Ti.UI.createView({
         layout: "vertical",
-        id: "__alloyId15"
+        id: "__alloyId13"
     });
-    $.__views.commentRow.add($.__views.__alloyId15);
+    $.__views.commentRow.add($.__views.__alloyId13);
     $.__views.username = Ti.UI.createLabel({
         color: "#4f4f4f",
         font: {
@@ -43,7 +43,7 @@ function Controller() {
         left: "60",
         text: ""
     });
-    $.__views.__alloyId15.add($.__views.username);
+    $.__views.__alloyId13.add($.__views.username);
     $.__views.comment = Ti.UI.createLabel({
         color: "#808080",
         font: {
@@ -53,7 +53,7 @@ function Controller() {
         id: "comment",
         text: ""
     });
-    $.__views.__alloyId15.add($.__views.comment);
+    $.__views.__alloyId13.add($.__views.comment);
     exports.destroy = function() {};
     _.extend($, $.__views);
     var args = arguments[0];
@@ -64,7 +64,6 @@ function Controller() {
     } else {
         $.picView.visible = false;
         $.username.text = "";
-        $.comment.text = "Sorry, No Comments available";
     }
     _.extend($, exports);
 }

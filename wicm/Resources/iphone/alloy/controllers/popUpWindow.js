@@ -12,7 +12,7 @@ function Controller() {
         navBarHidden: "true"
     });
     $.__views.popupWindow && $.addTopLevelView($.__views.popupWindow);
-    $.__views.__alloyId85 = Ti.UI.createView({
+    $.__views.__alloyId83 = Ti.UI.createView({
         top: "5",
         bottom: "5",
         left: "5",
@@ -20,9 +20,9 @@ function Controller() {
         backgroundColor: "#fff",
         layout: "vertical",
         borderRadius: "5",
-        id: "__alloyId85"
+        id: "__alloyId83"
     });
-    $.__views.popupWindow.add($.__views.__alloyId85);
+    $.__views.popupWindow.add($.__views.__alloyId83);
     $.__views.label = Ti.UI.createLabel({
         color: "#808080",
         textAlign: "center",
@@ -34,7 +34,7 @@ function Controller() {
         top: "50",
         id: "label"
     });
-    $.__views.__alloyId85.add($.__views.label);
+    $.__views.__alloyId83.add($.__views.label);
     $.__views.but1 = Ti.UI.createButton({
         color: "#fff",
         font: {
@@ -52,7 +52,7 @@ function Controller() {
         backgroundColor: "#30D1F4",
         backgroundSelectedColor: "#000"
     });
-    $.__views.__alloyId85.add($.__views.but1);
+    $.__views.__alloyId83.add($.__views.but1);
     $.__views.but2 = Ti.UI.createButton({
         color: "#fff",
         font: {
@@ -70,7 +70,7 @@ function Controller() {
         backgroundColor: "#808080",
         backgroundSelectedColor: "#000"
     });
-    $.__views.__alloyId85.add($.__views.but2);
+    $.__views.__alloyId83.add($.__views.but2);
     exports.destroy = function() {};
     _.extend($, $.__views);
     var args = arguments[0] || {};

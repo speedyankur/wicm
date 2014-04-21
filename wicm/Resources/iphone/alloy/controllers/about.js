@@ -76,7 +76,7 @@ function Controller() {
         textAlign: "justified",
         apiName: "Ti.UI.Label",
         classes: [ "content" ],
-        text: "1. Whichiscooler does not decide what is or isn’t cool.",
+        text: "1. The Golden Rule.",
         id: "__alloyId3"
     });
     $.__views.portrait.add($.__views.__alloyId3);
@@ -90,7 +90,7 @@ function Controller() {
         textAlign: "justified",
         apiName: "Ti.UI.Label",
         classes: [ "content" ],
-        text: "2. The Golden Rule.",
+        text: "2. Whichiscooler does not decide what is or isn’t cool.",
         id: "__alloyId4"
     });
     $.__views.portrait.add($.__views.__alloyId4);
@@ -118,7 +118,7 @@ function Controller() {
         textAlign: "justified",
         apiName: "Ti.UI.Label",
         classes: [ "content" ],
-        text: "The Cool Score combines clicks with the number of times a thing is favorited. A user’s average Cool Score is based on all things Shared 1st by the user that also remain in his or her favorites. If a user removes something she/he Shared 1st from his/her favorites, the thing’s Cool Score no longer affects the user’s average Cool Score.",
+        text: "The Cool Score combines clicks with the number of times a thing is favorited (that's a word, right?). A user’s average Cool Score is based on all things Shared 1st by the user that also remain in his or her favorites. If a user removes something she/he Shared 1st from his/her favorites, the thing’s Cool Score no longer affects the user’s average Cool Score.",
         id: "__alloyId6"
     });
     $.__views.portrait.add($.__views.__alloyId6);
@@ -146,38 +146,10 @@ function Controller() {
         textAlign: "justified",
         apiName: "Ti.UI.Label",
         classes: [ "content" ],
-        text: "Not sure yet.",
+        text: "Hmmm. We haven't figured that one out yet.",
         id: "__alloyId8"
     });
     $.__views.portrait.add($.__views.__alloyId8);
-    $.__views.__alloyId9 = Ti.UI.createLabel({
-        width: Ti.UI.FILL,
-        top: 10,
-        color: "#808080",
-        font: {
-            fontSize: 14
-        },
-        textAlign: "justified",
-        apiName: "Ti.UI.Label",
-        classes: [ "content" ],
-        text: "In the short term, we plan to make a few cents through affiliate marketing. In other words if a user purchases something she/he found using the app, Whichiscooler gets paid a small percentage of that sale.",
-        id: "__alloyId9"
-    });
-    $.__views.portrait.add($.__views.__alloyId9);
-    $.__views.__alloyId10 = Ti.UI.createLabel({
-        width: Ti.UI.FILL,
-        top: 10,
-        color: "#808080",
-        font: {
-            fontSize: 14
-        },
-        textAlign: "justified",
-        apiName: "Ti.UI.Label",
-        classes: [ "content" ],
-        text: "Longer term, we hope to have enough users to generate meaningful data related to peoples’ perceptions of “cool.” We think that data may be valuable, but we’re not sure yet.",
-        id: "__alloyId10"
-    });
-    $.__views.portrait.add($.__views.__alloyId10);
     exports.destroy = function() {};
     _.extend($, $.__views);
     _.extend($, exports);

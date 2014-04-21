@@ -1,0 +1,16 @@
+eclipse.preferences.version=1
+iosLaunchConfigurationAttributes/ATTR_MINIFY=true
+iosLaunchConfigurationAttributes/ATTR_PROJECT_NAME=wicm
+iosLaunchConfigurationAttributes/appid=com.whichiscooler.app
+iosLaunchConfigurationAttributes/certificate=S Maddox (D58F4QMC3N)
+iosLaunchConfigurationAttributes/distribute_path=/Users/mrstnmddx/Google Drive/Whichiscooler/Development/wicm/iOS/test
+iosLaunchConfigurationAttributes/keychain=
+iosLaunchConfigurationAttributes/output_format=ipa
+iosLaunchConfigurationAttributes/sdk_version=7.1
+iosLaunchConfigurationAttributes/uuid=5837157D-88AF-451B-80E8-1592B84540AE
+provisioning_profiles/adhoc/42AE8DB7-A244-4B99-9A67-3BA3EF9704B3/appid=com.whichiscooler.app
+provisioning_profiles/adhoc/42AE8DB7-A244-4B99-9A67-3BA3EF9704B3/name=WhichIsCooler
+provisioning_profiles/adhoc/42AE8DB7-A244-4B99-9A67-3BA3EF9704B3/uuid=42AE8DB7-A244-4B99-9A67-3BA3EF9704B3
+provisioning_profiles/adhoc/5837157D-88AF-451B-80E8-1592B84540AE/appid=com.whichiscooler.app
+provisioning_profiles/adhoc/5837157D-88AF-451B-80E8-1592B84540AE/name=wicmTest
+provisioning_profiles/adhoc/5837157D-88AF-451B-80E8-1592B84540AE/uuid=5837157D-88AF-451B-80E8-1592B84540AE

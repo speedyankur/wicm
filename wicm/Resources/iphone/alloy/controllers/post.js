@@ -63,7 +63,7 @@ function Controller() {
         top: "10"
     });
     $.__views.portrait.add($.__views.logo);
-    $.__views.__alloyId86 = Ti.UI.createLabel({
+    $.__views.__alloyId84 = Ti.UI.createLabel({
         width: Ti.UI.FILL,
         textAlign: "center",
         height: Ti.UI.SIZE,
@@ -74,9 +74,9 @@ function Controller() {
         },
         text: "Post cool things to see\nwhat others think.",
         top: "60",
-        id: "__alloyId86"
+        id: "__alloyId84"
     });
-    $.__views.portrait.add($.__views.__alloyId86);
+    $.__views.portrait.add($.__views.__alloyId84);
     $.__views.shareIcon = Ti.UI.createImageView({
         image: "/images/post_share_icon.png",
         width: "204",
@@ -85,7 +85,7 @@ function Controller() {
         id: "shareIcon"
     });
     $.__views.portrait.add($.__views.shareIcon);
-    $.__views.__alloyId87 = Ti.UI.createButton({
+    $.__views.__alloyId85 = Ti.UI.createButton({
         color: "#fff",
         font: {
             fontSize: "15",
@@ -99,20 +99,20 @@ function Controller() {
         title: "Continue",
         width: "230",
         bottom: "20",
-        id: "__alloyId87"
+        id: "__alloyId85"
     });
-    $.__views.portrait.add($.__views.__alloyId87);
+    $.__views.portrait.add($.__views.__alloyId85);
     try {
-        $.__views.__alloyId87.addEventListener("touchstart", Alloy.Globals.buttonFocused);
+        $.__views.__alloyId85.addEventListener("touchstart", Alloy.Globals.buttonFocused);
     } catch (e) {
-        __defers["$.__views.__alloyId87!touchstart!Alloy.Globals.buttonFocused"] = true;
+        __defers["$.__views.__alloyId85!touchstart!Alloy.Globals.buttonFocused"] = true;
     }
     try {
-        $.__views.__alloyId87.addEventListener("touchend", Alloy.Globals.buttonBlurred);
+        $.__views.__alloyId85.addEventListener("touchend", Alloy.Globals.buttonBlurred);
     } catch (e) {
-        __defers["$.__views.__alloyId87!touchend!Alloy.Globals.buttonBlurred"] = true;
+        __defers["$.__views.__alloyId85!touchend!Alloy.Globals.buttonBlurred"] = true;
     }
-    goToLogin ? $.__views.__alloyId87.addEventListener("click", goToLogin) : __defers["$.__views.__alloyId87!click!goToLogin"] = true;
+    goToLogin ? $.__views.__alloyId85.addEventListener("click", goToLogin) : __defers["$.__views.__alloyId85!click!goToLogin"] = true;
     $.__views.landscape = Ti.UI.createView({
         visible: "false",
         id: "landscape",
@@ -132,7 +132,7 @@ function Controller() {
         top: "40"
     });
     $.__views.column1.add($.__views.logo);
-    $.__views.__alloyId88 = Ti.UI.createLabel({
+    $.__views.__alloyId86 = Ti.UI.createLabel({
         width: Ti.UI.FILL,
         textAlign: "center",
         height: Ti.UI.SIZE,
@@ -143,10 +143,10 @@ function Controller() {
         },
         text: "Post cool things and\n what others think.",
         top: "110",
-        id: "__alloyId88"
+        id: "__alloyId86"
     });
-    $.__views.column1.add($.__views.__alloyId88);
-    $.__views.__alloyId89 = Ti.UI.createButton({
+    $.__views.column1.add($.__views.__alloyId86);
+    $.__views.__alloyId87 = Ti.UI.createButton({
         color: "#fff",
         font: {
             fontSize: "15",
@@ -160,20 +160,20 @@ function Controller() {
         title: "Continue",
         width: "230",
         bottom: "20",
-        id: "__alloyId89"
+        id: "__alloyId87"
     });
-    $.__views.column1.add($.__views.__alloyId89);
+    $.__views.column1.add($.__views.__alloyId87);
     try {
-        $.__views.__alloyId89.addEventListener("touchstart", Alloy.Globals.buttonFocused);
+        $.__views.__alloyId87.addEventListener("touchstart", Alloy.Globals.buttonFocused);
     } catch (e) {
-        __defers["$.__views.__alloyId89!touchstart!Alloy.Globals.buttonFocused"] = true;
+        __defers["$.__views.__alloyId87!touchstart!Alloy.Globals.buttonFocused"] = true;
     }
     try {
-        $.__views.__alloyId89.addEventListener("touchend", Alloy.Globals.buttonBlurred);
+        $.__views.__alloyId87.addEventListener("touchend", Alloy.Globals.buttonBlurred);
     } catch (e) {
-        __defers["$.__views.__alloyId89!touchend!Alloy.Globals.buttonBlurred"] = true;
+        __defers["$.__views.__alloyId87!touchend!Alloy.Globals.buttonBlurred"] = true;
     }
-    goToLogin ? $.__views.__alloyId89.addEventListener("click", goToLogin) : __defers["$.__views.__alloyId89!click!goToLogin"] = true;
+    goToLogin ? $.__views.__alloyId87.addEventListener("click", goToLogin) : __defers["$.__views.__alloyId87!click!goToLogin"] = true;
     $.__views.column2 = Ti.UI.createView({
         width: "45%",
         id: "column2"
@@ -197,12 +197,12 @@ function Controller() {
     __defers["$.__views.post!swipe!handleSwipeEvent"] && $.__views.post.addEventListener("swipe", handleSwipeEvent);
     __defers["$.__views.post!close!onClose"] && $.__views.post.addEventListener("close", onClose);
     __defers["$.__views.post!android:back!closingWindowAnimationforAndroid"] && $.__views.post.addEventListener("android:back", closingWindowAnimationforAndroid);
+    __defers["$.__views.__alloyId85!touchstart!Alloy.Globals.buttonFocused"] && $.__views.__alloyId85.addEventListener("touchstart", Alloy.Globals.buttonFocused);
+    __defers["$.__views.__alloyId85!touchend!Alloy.Globals.buttonBlurred"] && $.__views.__alloyId85.addEventListener("touchend", Alloy.Globals.buttonBlurred);
+    __defers["$.__views.__alloyId85!click!goToLogin"] && $.__views.__alloyId85.addEventListener("click", goToLogin);
     __defers["$.__views.__alloyId87!touchstart!Alloy.Globals.buttonFocused"] && $.__views.__alloyId87.addEventListener("touchstart", Alloy.Globals.buttonFocused);
     __defers["$.__views.__alloyId87!touchend!Alloy.Globals.buttonBlurred"] && $.__views.__alloyId87.addEventListener("touchend", Alloy.Globals.buttonBlurred);
     __defers["$.__views.__alloyId87!click!goToLogin"] && $.__views.__alloyId87.addEventListener("click", goToLogin);
-    __defers["$.__views.__alloyId89!touchstart!Alloy.Globals.buttonFocused"] && $.__views.__alloyId89.addEventListener("touchstart", Alloy.Globals.buttonFocused);
-    __defers["$.__views.__alloyId89!touchend!Alloy.Globals.buttonBlurred"] && $.__views.__alloyId89.addEventListener("touchend", Alloy.Globals.buttonBlurred);
-    __defers["$.__views.__alloyId89!click!goToLogin"] && $.__views.__alloyId89.addEventListener("click", goToLogin);
     _.extend($, exports);
 }
 

@@ -62,20 +62,20 @@ function Controller() {
         id: "viewHeaderLabel"
     });
     $.__views.navview.add($.__views.viewHeaderLabel);
-    $.__views.__alloyId106 = Ti.UI.createView({
+    $.__views.__alloyId108 = Ti.UI.createView({
         layout: "horizontal",
         height: "150",
         top: "50",
         backgroundColor: "#fff",
-        id: "__alloyId106"
+        id: "__alloyId108"
     });
-    $.__views.window.add($.__views.__alloyId106);
+    $.__views.window.add($.__views.__alloyId108);
     $.__views.column1 = Ti.UI.createView({
         width: "40%",
         id: "column1",
         layout: "vertical"
     });
-    $.__views.__alloyId106.add($.__views.column1);
+    $.__views.__alloyId108.add($.__views.column1);
     $.__views.holder = Ti.UI.createImageView({
         top: "5",
         id: "holder",
@@ -108,61 +108,7 @@ function Controller() {
         layout: "vertical",
         top: "20"
     });
-    $.__views.__alloyId106.add($.__views.column2);
-    $.__views.__alloyId107 = Ti.UI.createView({
-        top: "5",
-        layout: "horizontal",
-        height: "20",
-        id: "__alloyId107"
-    });
-    $.__views.column2.add($.__views.__alloyId107);
-    $.__views.label = Ti.UI.createLabel({
-        color: "#808080",
-        font: {
-            fontSize: "15",
-            fontFamily: "Helvetica Neue"
-        },
-        text: "Following :",
-        id: "label"
-    });
-    $.__views.__alloyId107.add($.__views.label);
-    $.__views.value = Ti.UI.createLabel({
-        color: "#30D1F4",
-        font: {
-            fontSize: "15",
-            fontFamily: "Helvetica Neue"
-        },
-        text: "483",
-        id: "value"
-    });
-    $.__views.__alloyId107.add($.__views.value);
-    $.__views.__alloyId108 = Ti.UI.createView({
-        top: "5",
-        layout: "horizontal",
-        height: "20",
-        id: "__alloyId108"
-    });
-    $.__views.column2.add($.__views.__alloyId108);
-    $.__views.label = Ti.UI.createLabel({
-        color: "#808080",
-        font: {
-            fontSize: "15",
-            fontFamily: "Helvetica Neue"
-        },
-        text: "Follower :",
-        id: "label"
-    });
-    $.__views.__alloyId108.add($.__views.label);
-    $.__views.value = Ti.UI.createLabel({
-        color: "#30D1F4",
-        font: {
-            fontSize: "15",
-            fontFamily: "Helvetica Neue"
-        },
-        text: "100",
-        id: "value"
-    });
-    $.__views.__alloyId108.add($.__views.value);
+    $.__views.__alloyId108.add($.__views.column2);
     $.__views.__alloyId109 = Ti.UI.createView({
         top: "5",
         layout: "horizontal",
@@ -176,7 +122,7 @@ function Controller() {
             fontSize: "15",
             fontFamily: "Helvetica Neue"
         },
-        text: "Things Shared :",
+        text: "Following :",
         id: "label"
     });
     $.__views.__alloyId109.add($.__views.label);
@@ -186,7 +132,7 @@ function Controller() {
             fontSize: "15",
             fontFamily: "Helvetica Neue"
         },
-        text: "4858",
+        text: "483",
         id: "value"
     });
     $.__views.__alloyId109.add($.__views.value);
@@ -203,7 +149,7 @@ function Controller() {
             fontSize: "15",
             fontFamily: "Helvetica Neue"
         },
-        text: "Avg. Cool Score :",
+        text: "Follower :",
         id: "label"
     });
     $.__views.__alloyId110.add($.__views.label);
@@ -213,10 +159,64 @@ function Controller() {
             fontSize: "15",
             fontFamily: "Helvetica Neue"
         },
-        text: "8",
+        text: "100",
         id: "value"
     });
     $.__views.__alloyId110.add($.__views.value);
+    $.__views.__alloyId111 = Ti.UI.createView({
+        top: "5",
+        layout: "horizontal",
+        height: "20",
+        id: "__alloyId111"
+    });
+    $.__views.column2.add($.__views.__alloyId111);
+    $.__views.label = Ti.UI.createLabel({
+        color: "#808080",
+        font: {
+            fontSize: "15",
+            fontFamily: "Helvetica Neue"
+        },
+        text: "Things Shared :",
+        id: "label"
+    });
+    $.__views.__alloyId111.add($.__views.label);
+    $.__views.value = Ti.UI.createLabel({
+        color: "#30D1F4",
+        font: {
+            fontSize: "15",
+            fontFamily: "Helvetica Neue"
+        },
+        text: "4858",
+        id: "value"
+    });
+    $.__views.__alloyId111.add($.__views.value);
+    $.__views.__alloyId112 = Ti.UI.createView({
+        top: "5",
+        layout: "horizontal",
+        height: "20",
+        id: "__alloyId112"
+    });
+    $.__views.column2.add($.__views.__alloyId112);
+    $.__views.label = Ti.UI.createLabel({
+        color: "#808080",
+        font: {
+            fontSize: "15",
+            fontFamily: "Helvetica Neue"
+        },
+        text: "Avg. Cool Score :",
+        id: "label"
+    });
+    $.__views.__alloyId112.add($.__views.label);
+    $.__views.value = Ti.UI.createLabel({
+        color: "#30D1F4",
+        font: {
+            fontSize: "15",
+            fontFamily: "Helvetica Neue"
+        },
+        text: "8",
+        id: "value"
+    });
+    $.__views.__alloyId112.add($.__views.value);
     $.__views.scrollView = Ti.UI.createScrollView({
         id: "scrollView",
         top: "210",

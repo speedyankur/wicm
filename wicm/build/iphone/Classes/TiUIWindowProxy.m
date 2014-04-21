@@ -436,7 +436,7 @@
     id barImageValue = [self valueForUndefinedKey:@"barImage"];
     
     UINavigationBar* ourNB = [[controller navigationController] navigationBar];
-    UIImage* theImage = [TiUtils toImage:barImageValue proxy:self];
+    UIImage* theImage = [TiUtils toImage:barImageValue proxy:self size:[ourNB bounds].size];
     
     if (theImage == nil) {
         [ourNB setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
