@@ -2,7 +2,7 @@
 	<Window id="window" backgroundColor="#FFFFFF" modal="false" navBarHidden="true">
 		<View id="navview">
 			<Button id="leftButton" onClick="goBack" />
-			<Label id="viewHeaderLabel">Filters</Label>
+			<Label id="viewHeaderLabel">Edit Filter</Label>
 		</View>
 		<View top="44" bottom="0" >
 			<View height="50" top="0" backgroundColor="#CCDDE4" left="0" right="0">

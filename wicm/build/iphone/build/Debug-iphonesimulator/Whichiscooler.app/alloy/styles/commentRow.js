@@ -1,0 +1,1 @@
+module.exports = [{"isClass":true,"priority":10000.0039,"key":"username","style":{color:"#4f4f4f",font:{fontSize:"14",fontWeight:"bold",},}},{"isClass":true,"priority":10000.004,"key":"usercomment","style":{color:"#808080",font:{fontSize:"14",},}}];

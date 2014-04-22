@@ -1,14 +1,12 @@
 {
-	"target": "dist-adhoc",
-	"deployType": "production",
+	"target": "simulator",
+	"deployType": "development",
 	"deviceFamily": "iphone",
-	"distributionName": "S Maddox (D58F4QMC3N)",
-	"iosSdkPath": "/Users/mrstnmddx/Library/Application Support/Titanium/mobilesdk/osx/3.2.1.GA/iphone",
+	"iosSdkPath": "/Users/mrstnmddx/Library/Application Support/Titanium/mobilesdk/osx/3.3.0.v20140422110132/iphone",
 	"tiCoreHash": "77157e1ffaec640cf559356a147b6a4c",
 	"modulesHash": "d41d8cd98f00b204e9800998ecf8427e",
 	"modulesNativeHash": "d41d8cd98f00b204e9800998ecf8427e",
-	"gitHash": "991027b",
-	"outputDir": "/Users/mrstnmddx/Google Drive/Whichiscooler/Development/wicm/iOS/test",
+	"gitHash": "792fe66",
 	"name": "Whichiscooler",
 	"id": "com.whichiscooler.app",
 	"analytics": false,
@@ -18,8 +16,8 @@
 	"description": "not specified",
 	"copyright": "2013 by admin",
 	"guid": "24ccbbdf-7741-4f0a-ab18-1d15286791ed",
-	"skipJSMinification": false,
+	"skipJSMinification": true,
 	"forceCopy": false,
 	"forceCopyAll": false,
-	"encryptJS": true
+	"encryptJS": false
 }

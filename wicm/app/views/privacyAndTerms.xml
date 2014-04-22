@@ -14,7 +14,7 @@
 			<Label class="title"
 				text="Terms of Service..."></Label>
 			<Label class="content"
-				text="What? We didn't think anyone would read this page."></Label>			
+				text="We really didn't think anyone would read this page."></Label>			
 			
 		</View>
 	</ScrollView>

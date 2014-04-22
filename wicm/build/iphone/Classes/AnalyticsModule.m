@@ -6,12 +6,12 @@
  * 
  * WARNING: This is generated code. Modify at your own risk and without support.
  */
-#import "TiBase.h"
 #import "AnalyticsModule.h"
-#import "TiHost.h"
 #import "TiApp.h"
-#import "ASIHTTPRequest.h"
-#import "SBJSON.h"
+#import "TiBase.h"
+#import "TiHost.h"
+#import "TiHTTPClient/TiHTTPClient.h"
+
 #import <sys/utsname.h>
 #import "NSData+Additions.h"
 #import "Reachability.h"
@@ -163,7 +163,7 @@ NSString * const TI_DB_VERSION = @"1";
 	// giving us bad reachability info.
 	NetworkStatus status = [[Reachability reachabilityForInternetConnection] currentReachabilityStatus];
 	
-	// when we can't reach the network, we need to log our attempt, 
+	// when we can't reach the network, we need to log our attempt,
 	// set a retry timer and just bail...
 	if (status != ReachableViaWiFi && status != ReachableViaWWAN)
 	{
@@ -173,7 +173,7 @@ NSString * const TI_DB_VERSION = @"1";
 		pool = nil;
 		return;
 	}
-
+    
 	// we can cancel our timers
 	if (retryTimer!=nil)
 	{
@@ -202,19 +202,17 @@ NSString * const TI_DB_VERSION = @"1";
 	
 	NSMutableArray *data = [NSMutableArray array];
 	
-	SBJSON *json = [[[SBJSON alloc] init] autorelease];
-	
 	PLSqliteResultSet *rs = (PLSqliteResultSet*)[database executeQuery:@"SELECT data FROM pending_events"];
 	while ([rs next])
 	{
 		NSString *event = [rs stringForColumn:@"data"];
-		NSError* jsonError = nil;
-		id frag = [json fragmentWithString:event error:&jsonError];
-		if (jsonError) {
-			NSLog(@"[ERROR] Problem sending analytics: %@", [jsonError localizedDescription]);
+        NSError *jsonError = nil;
+		id frag = [TiUtils jsonParse:event error:&jsonError];
+        if(jsonError != nil) {
+            NSLog(@"[ERROR] Problem sending analytics: %@", [jsonError localizedDescription]);
 			NSLog(@"[ERROR] Dropped event was: %@", event);
 			continue;
-		}
+        }
 		[data addObject:frag];
 	}
 	[rs close];
@@ -225,27 +223,24 @@ NSString * const TI_DB_VERSION = @"1";
 		url = [[NSURL URLWithString:[kTiAnalyticsUrl stringByAppendingString:TI_APPLICATION_GUID]] retain];
 	}
 	
-	ASIHTTPRequest* request = [ASIHTTPRequest requestWithURL:url];
-	[request setRequestMethod:@"POST"];
-	[request addRequestHeader:@"Content-Type" value:@"text/json"];
-	[request addRequestHeader:@"User-Agent" value:[[TiApp app] userAgent]];
-	//TODO: need to update backend to accept compressed bodies. When done, use [request setShouldCompressRequestBody:YES]
-	[request setTimeOutSeconds:timeout];
-	[request setShouldPresentAuthenticationDialog:NO];
-	[request setUseSessionPersistence:NO];
-	[request setUseCookiePersistence:YES];
-	[request setShouldRedirect:YES];
-	NSString * stringifiedData = [SBJSON stringify:data];
-	[request appendPostData:[stringifiedData dataUsingEncoding:NSUTF8StringEncoding]];
-	[request setDelegate:self];
-	
-	@try 
+    TiHTTPPostForm *form = [[[TiHTTPPostForm alloc] init] autorelease];
+    [form addHeaderKey:@"Content-Type" andHeaderValue:@"text/json"];
+    [form addHeaderKey:@"User-Agent" andHeaderValue:[[TiApp app] userAgent]];
+    [form setJSONData:data];
+    
+    TiHTTPRequest *request = [[[TiHTTPRequest alloc] init] autorelease];
+    [request setUrl:url];
+    [request setPostForm:form];
+    [request setMethod:@"POST"];
+    [request setTimeout: timeout];
+    [request setSynchronous:YES];
+	@try
 	{
 		// run synchronous ... we are either in a sync call or
 		// we're on a background timer thread
-		[request startSynchronous];
+		[request send];
 		
-		NSError* error = [request error];
+		NSError* error = [[request response] error];
 		if (error != nil) {
 			NSLog(@"[ERROR] Analytics error sending request: %@", [error localizedDescription]);
 			[database rollbackTransaction];
@@ -256,17 +251,12 @@ NSString * const TI_DB_VERSION = @"1";
 			return;
 		}
 		
-		NSData *data = [request responseData];
-		if (data!=nil && [data length]>0) 
+		NSString *result = [[request response] responseString];
+		if (result!=nil)
 		{
-			NSString * result = [[[NSString alloc] initWithBytes:[data bytes] length:[data length] encoding:[request responseEncoding]] autorelease];
-		
-			if (result!=nil)
-			{
-				VerboseLog(@"[DEBUG] analytics response %@",result);
-				VerboseLog(@"[DEBUG] We tried to send to %@ the data: %@ ",url,stringifiedData);
-			}
-		}
+			DeveloperLog(@"[DEBUG] analytics response %@",result);
+			DeveloperLog(@"[DEBUG] We tried to send to %@ the data: %@ ", url, [TiUtils jsonStringify:data]);
+        }
 		
 		// if we get here, it succeeded and we can clean up records in DB
 		[database executeUpdate:@"delete from pending_events"];
@@ -351,8 +341,8 @@ NSString * const TI_DB_VERSION = @"1";
 	{
 		[dict setObject:remoteDeviceUUID forKey:@"rdu"];
 	}
-
-	id value = [SBJSON stringify:dict];
+    NSError *err = nil;
+	id value = [TiUtils jsonStringify:dict error:&err];
 	self.lastEvent = value;
 	
 	NSString *sql = [NSString stringWithFormat:@"INSERT INTO pending_events VALUES (?)"];
@@ -602,7 +592,7 @@ NSString * const TI_DB_VERSION = @"1";
 {
 	if (data!=nil && [data isKindOfClass:[NSDictionary class]]==NO)
 	{
-		id value = [SBJSON stringify:data];
+		id value = [TiUtils jsonParse:data];
 		data = [NSDictionary dictionaryWithObject:value forKey:@"data"];
 	}
 	return data;

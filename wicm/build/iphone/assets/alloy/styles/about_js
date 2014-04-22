@@ -1,1 +1,0 @@
-module.exports=[{isClass:!0,priority:10000.0027,key:"title",style:{width:Ti.UI.FILL,top:20,color:"#519dba",font:{fontSize:16,fontWeight:"bold"}}},{isClass:!0,priority:10000.0028,key:"content",style:{width:Ti.UI.FILL,top:10,color:"#808080",font:{fontSize:14},textAlign:"justified"}}];
