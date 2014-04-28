@@ -9,5 +9,7 @@ Whichiscooler\:launchShortcut=com.appcelerator.titanium.mobile.ui.android.simula
 eclipse.preferences.version=1
 preference.show.console.onError=true
 preference.studio.perspective.version=103
+testapp\:launchMode=run
+testapp\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.iphone.launchShortcut.iPhone Retina (4 inch 64-bit)
 wicm\:launchMode=run
 wicm\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.iphone.launchShortcut.iPhone Retina (4 inch 64-bit)

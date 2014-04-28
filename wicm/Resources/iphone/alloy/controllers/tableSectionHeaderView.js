@@ -6,11 +6,11 @@ function Controller() {
     arguments[0] ? arguments[0]["__itemTemplate"] : null;
     var $ = this;
     var exports = {};
-    $.__views.__alloyId99 = Ti.UI.createView({
+    $.__views.__alloyId103 = Ti.UI.createView({
         height: "32",
         backgroundColor: "#bfd9e4",
         borderColor: "#FFF",
-        id: "__alloyId99"
+        id: "__alloyId103"
     });
     $.__views.label = Ti.UI.createLabel({
         top: "8",
@@ -25,9 +25,9 @@ function Controller() {
         text: "",
         id: "label"
     });
-    $.__views.__alloyId99.add($.__views.label);
+    $.__views.__alloyId103.add($.__views.label);
     $.__views.tableSectionHeaderView = Ti.UI.createTableViewSection({
-        headerView: $.__views.__alloyId99,
+        headerView: $.__views.__alloyId103,
         id: "tableSectionHeaderView"
     });
     $.__views.tableSectionHeaderView && $.addTopLevelView($.__views.tableSectionHeaderView);

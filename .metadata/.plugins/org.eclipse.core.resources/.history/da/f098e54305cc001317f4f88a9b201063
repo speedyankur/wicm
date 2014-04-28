@@ -1,0 +1,20 @@
+<Alloy>
+	<Window id="win" onClose="onClose" onSwipe="handleSwipeEvent">
+		<View id="portrait">
+			<ImageView id="logo" top='10'  />
+			<Label top='60'>Discover cool things\nshared by others.</Label>
+			<ImageView top='130' id="sampleApp" />
+			<Button  onClick="goToPostScreen" title="Continue" width="230" onTouchstart="Alloy.Globals.buttonFocused" onTouchend="Alloy.Globals.buttonBlurred" bottom="20"></Button>			
+		</View>
+		<View id="landscape" layout="horizontal">
+			<View id="column1" >
+				<ImageView id="logo" top="40" width='260' height='35'/>
+				<Label top='110' >Discover Cool Things \n Shared by others.</Label>
+				<Button  onClick="goToPostScreen" title="Continue" width="230" onTouchstart="Alloy.Globals.buttonFocused" onTouchend="Alloy.Globals.buttonBlurred" bottom="20"></Button>	
+			</View>
+			<View id="column2" >
+				<ImageView id="sampleApp" top='10' />
+			</View>
+		</View>
+	</Window>
+</Alloy>

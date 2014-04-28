@@ -10,11 +10,11 @@ function Controller() {
         id: "otherSettings"
     });
     $.__views.otherSettings && $.addTopLevelView($.__views.otherSettings);
-    $.__views.__alloyId82 = Ti.UI.createLabel({
+    $.__views.__alloyId86 = Ti.UI.createLabel({
         text: "Other Settings",
-        id: "__alloyId82"
+        id: "__alloyId86"
     });
-    $.__views.otherSettings.add($.__views.__alloyId82);
+    $.__views.otherSettings.add($.__views.__alloyId86);
     exports.destroy = function() {};
     _.extend($, $.__views);
     _.extend($, exports);

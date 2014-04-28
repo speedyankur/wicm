@@ -84,7 +84,7 @@ function Controller() {
             fontSize: "20",
             fontWeight: "bold"
         },
-        text: "Filters",
+        text: "Edit Filter",
         id: "viewHeaderLabel"
     });
     $.__views.navview.add($.__views.viewHeaderLabel);

@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/mrstnmddx/Desktop/Whichisooler/Development/git/wicm/wicm/wicm/build/iphone/Classes/GDataXMLNode.m \
-  /Users/mrstnmddx/Desktop/Whichisooler/Development/git/wicm/wicm/wicm/build/iphone/Classes/GDataXMLNode.h \
+  /Users/mrstnmddx/Desktop/Whichisooler/Development/git/Test/wicmTest/wicm/wicm/build/iphone/Classes/GDataXMLNode.m \
+  /Users/mrstnmddx/Desktop/Whichisooler/Development/git/Test/wicmTest/wicm/wicm/build/iphone/Classes/GDataXMLNode.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/include/libxml2/libxml/tree.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/include/libxml2/libxml/xmlversion.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/include/libxml2/libxml/xmlexports.h \

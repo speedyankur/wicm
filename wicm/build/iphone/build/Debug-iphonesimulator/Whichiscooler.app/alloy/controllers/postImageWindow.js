@@ -101,20 +101,20 @@ function Controller() {
     });
     $.__views.navview.add($.__views.post);
     goBack ? $.__views.post.addEventListener("click", goBack) : __defers["$.__views.post!click!goBack"] = true;
-    $.__views.__alloyId88 = Ti.UI.createView({
+    $.__views.__alloyId92 = Ti.UI.createView({
         height: "150",
         backgroundColor: "#fff",
         top: "50",
-        id: "__alloyId88"
+        id: "__alloyId92"
     });
-    $.__views.window.add($.__views.__alloyId88);
+    $.__views.window.add($.__views.__alloyId92);
     $.__views.column1 = Ti.UI.createView({
         id: "column1",
         width: "140",
         layout: "vertical",
         left: "15"
     });
-    $.__views.__alloyId88.add($.__views.column1);
+    $.__views.__alloyId92.add($.__views.column1);
     $.__views.selectedImage = Ti.UI.createImageView({
         top: "0",
         left: "5",
@@ -128,7 +128,7 @@ function Controller() {
         left: "165",
         right: "10"
     });
-    $.__views.__alloyId88.add($.__views.column2);
+    $.__views.__alloyId92.add($.__views.column2);
     $.__views.textArea = Ti.UI.createTextArea({
         color: "#808080",
         id: "textArea",

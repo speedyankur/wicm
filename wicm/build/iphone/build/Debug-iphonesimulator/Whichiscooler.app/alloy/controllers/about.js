@@ -146,7 +146,7 @@ function Controller() {
         textAlign: "justified",
         apiName: "Ti.UI.Label",
         classes: [ "content" ],
-        text: "Hmmm. We haven't figured that one out yet.",
+        text: "Hmmm. We haven't figured that one out yet, but we promise to follow the first rule of Whichiscooler.",
         id: "__alloyId8"
     });
     $.__views.portrait.add($.__views.__alloyId8);

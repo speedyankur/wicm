@@ -1,0 +1,7 @@
+<Alloy>
+	<NavigationWindow id="navgroup">
+		<Window id="index">
+	        <Button>Hi</Button>
+	    </Window>
+   	</NavigationWindow>
+</Alloy>

@@ -24,34 +24,34 @@ function Controller() {
         classes: []
     });
     $.__views.about.add($.__views.portrait);
-    $.__views.__alloyId89 = Ti.UI.createLabel({
+    $.__views.__alloyId93 = Ti.UI.createLabel({
         apiName: "Ti.UI.Label",
         classes: [ "title" ],
         text: "Privacy Policy...",
-        id: "__alloyId89"
+        id: "__alloyId93"
     });
-    $.__views.portrait.add($.__views.__alloyId89);
-    $.__views.__alloyId90 = Ti.UI.createLabel({
+    $.__views.portrait.add($.__views.__alloyId93);
+    $.__views.__alloyId94 = Ti.UI.createLabel({
         apiName: "Ti.UI.Label",
         classes: [ "content" ],
         text: "We're going to sell your soul to the highest bidder.",
-        id: "__alloyId90"
+        id: "__alloyId94"
     });
-    $.__views.portrait.add($.__views.__alloyId90);
-    $.__views.__alloyId91 = Ti.UI.createLabel({
+    $.__views.portrait.add($.__views.__alloyId94);
+    $.__views.__alloyId95 = Ti.UI.createLabel({
         apiName: "Ti.UI.Label",
         classes: [ "title" ],
         text: "Terms of Service...",
-        id: "__alloyId91"
+        id: "__alloyId95"
     });
-    $.__views.portrait.add($.__views.__alloyId91);
-    $.__views.__alloyId92 = Ti.UI.createLabel({
+    $.__views.portrait.add($.__views.__alloyId95);
+    $.__views.__alloyId96 = Ti.UI.createLabel({
         apiName: "Ti.UI.Label",
         classes: [ "content" ],
-        text: "What? We didn't think anyone would read this page.",
-        id: "__alloyId92"
+        text: "We really didn't think anyone would read this page.",
+        id: "__alloyId96"
     });
-    $.__views.portrait.add($.__views.__alloyId92);
+    $.__views.portrait.add($.__views.__alloyId96);
     exports.destroy = function() {};
     _.extend($, $.__views);
     _.extend($, exports);
