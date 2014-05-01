@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="BasicNewProjectResourceWizard">
+		<item value="3.3.0.v20140422110132" key="titaniumSDK"/>
 	</section>
 	<section name="PromoteToProjectWizard">
 	</section>

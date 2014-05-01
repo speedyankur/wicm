@@ -9,7 +9,7 @@
 			 text="What it is..."></Label>
 			<Label class="content"
 				text="Whichiscooler is a tool to discover and share things from around the web."
-				text="As users answer the question “Which is cooler?” a dynamic gallery displays things (within the filters you set) ranked on the basis of cool."/>
+				text="As users answer the question “Which is cooler?” a dynamic gallery displays things (within your custom filters) ranked on all users' perception of cool."/>
 			<Label class="title"
 				text="Rules of Whichiscooler..."></Label>
 			<Label class="content"
@@ -20,12 +20,12 @@
 			<Label class="title"
 				text="Cool Score (CS)..."></Label>
 			<Label class="content"
-				text="The Cool Score combines clicks with the number of times a thing is favorited (that's a word, right?). A user’s average Cool Score is based on all things Shared 1st by the user that also remain in his or her favorites. If a user removes something she/he Shared 1st from his/her favorites, the thing’s Cool Score no longer affects the user’s average Cool Score."></Label>
+				text="The Cool Score for things combines clicks with the number of times a thing is favorited (that's a word, right?). A user’s average Cool Score is based on all things Shared 1st by the user that also remain in his or her favorites. If a user removes something she/he Shared 1st from his/her favorites, the thing’s Cool Score no longer affects the user’s average Cool Score."></Label>
 				
 			<Label class="title"
 				text="How we make money…"></Label>
 			<Label class="content"
-				text="Hmmm. We haven't figured that one out yet."></Label>			
+				text="Hmmm. We haven't figured that one out yet, but we promise to follow the first rule of Whichiscooler."></Label>			
 			
 		</View>
 	</ScrollView>
