@@ -34,6 +34,9 @@ if (!Titanium.App.Properties.getInt("settingsLoaded")) {
 }
 
 Alloy.Globals.isiOS7Plus = function() {
+    var version = Titanium.Platform.version.split(".");
+    var major = parseInt(version[0], 10);
+    if (major >= 7) return true;
     return false;
 };
 
@@ -81,11 +84,17 @@ Alloy.Globals.createTableSectionHeaderView = function(label, leftHeaderViewImage
     return section;
 };
 
-Alloy.Globals.buttonFocused = function(e) {};
+Alloy.Globals.buttonFocused = function(e) {
+    e.source.setBackgroundColor("#000");
+};
 
-Alloy.Globals.buttonBlurred = function(e) {};
+Alloy.Globals.buttonBlurred = function(e) {
+    e.source.setBackgroundColor("#30D1F4");
+};
 
-Alloy.Globals.buttonBlurredGray = function(e) {};
+Alloy.Globals.buttonBlurredGray = function(e) {
+    e.source.setBackgroundColor("#808080");
+};
 
 Alloy.Globals.objectOpacityOnFocused = function(e) {
     e.source.setOpacity(.7);
@@ -120,9 +129,7 @@ Alloy.Globals.loginFirst = function(callback) {
         win.addEventListener("close", function() {
             Alloy.Globals.APIKey && callback();
         });
-        win.open({
-            activityEnterAnimation: Ti.App.Android.R.anim.slide_in_right
-        });
+        Alloy.Globals.navgroup.open(win);
     };
     nxtArgs.but2handler = function() {
         popUpWindow.close();

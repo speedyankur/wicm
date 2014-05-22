@@ -11,7 +11,7 @@
 			<Label class="content"
 				text="Single tap image to vote."
 				text="Double tap image to view full-screen."
-				text="Long press image to learn more."
+				text="Long press image to learn more." ></Label>
 			<Label class="title"
 			 text="What it is..."></Label>
 			<Label class="content"
