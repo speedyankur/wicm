@@ -51,12 +51,19 @@ function rowSelect(e) {
 	lastRowSelected = e.row;
 	if (e.row.customView == "logout") {
 		Alloy.Globals.APIKey = null;
-		if (OS_IOS)
+		var controller = Alloy.createController('login');
+		var win = controller.getView();
+		if (OS_IOS){
 			Alloy.Globals.navgroup.close($.win, {
 				animated : true
 			});
+			Alloy.Globals.navgroup.open(win);
+		}
 		else {
 			$.win.close();
+			win.open({
+				activityEnterAnimation : Ti.App.Android.R.anim.slide_in_right
+			});
 		}
 		return;
 	}
