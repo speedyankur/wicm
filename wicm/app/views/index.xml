@@ -1,7 +1,7 @@
-<Alloy>
-	<NavigationWindow id="navgroup">
-		<Window id="index">
+<Alloy>	
+	<Window id="index">
+	    <NavigationGroup id="navgroup">
 	        <Require src="discover" id="discover"/>
-	    </Window>
-   	</NavigationWindow>
+	    </NavigationGroup>
+   	</Window>
 </Alloy>
