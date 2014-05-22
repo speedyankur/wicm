@@ -1,5 +1,9 @@
 <Alloy autoStyle="true">
 	<Window id="window" backgroundColor="#FFFFFF" modal="false" navBarHidden="true">
+		<View id="navview">
+			<Button id="leftButton" onClick="goBack" />
+			<Label id="viewHeaderLabel">Privacy and Terms</Label>
+		</View>		
 		<ScrollView id="about"
 		height="auto" bottom="44" top="0">
 			<View 

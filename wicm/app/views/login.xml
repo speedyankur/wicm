@@ -115,7 +115,7 @@
 				image="/images/toc.png"
 				top="20"
 				width="220"
-				height="27"/>
+				height="27" onClick="showPrivacyPolicy"/>
 			<Button id="continue_button"
 				title="Continue"
 				class="continueBtn"
@@ -246,7 +246,7 @@
 					image="/images/toc.png"
 					top="40"
 					width="220"
-					height="27"/>
+					height="27" onClick="showPrivacyPolicy"/>
 				<Button id="continue_button"
 					title="Contine"
 					class="continueBtn"
