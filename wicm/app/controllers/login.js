@@ -1,5 +1,5 @@
 var iOS7 = Alloy.Globals.isiOS7Plus();
-$.login.top  = iOS7 ? 20 : 0;
+$.login.top = iOS7 ? 20 : 0;
 Ti.UI.setBackgroundColor('#FFF');
 var animation = require('alloy/animation');
 function loginNow() {
@@ -20,13 +20,13 @@ function loginNow() {
 		$.login.close();
 	};
 	xhr.onerror = function(e) {
-		Alloy.Globals.loading.hide();	
+		Alloy.Globals.loading.hide();
 		if (this.status == 0) {
 			alert("Hmm. Network not avaiable. :(");
 		} else if (this.status == 2) {
 			alert("The request timed out. :(");
 		} else if (this.status == 500 || this.status == 404) {
-			animation.shake($.fieldsView_p, 500, function(e){
+			animation.shake($.fieldsView_p, 500, function(e) {
 				alert("Something wasn't right.");
 			});
 		}
@@ -35,9 +35,11 @@ function loginNow() {
 	xhr.send(data);
 
 }
-function skipNow(){
+
+function skipNow() {
 	$.login.close();
 }
+
 function goToMain() {
 	var controller = Alloy.createController('baseWindow');
 	var baseWindow = controller.getView();
@@ -46,39 +48,45 @@ function goToMain() {
 	else
 		baseWindow.open();
 };
+function showPrivacyPolicy(){
+	var controller = Alloy.createController('privacyAndTerms');
+	var privateAndTermsWindow = controller.getView();
+	if (OS_IOS)
+		Alloy.Globals.navgroup.open(privateAndTermsWindow);
+	else
+		privateAndTermsWindow.open();	
+}
 function closingWindowAnimationforAndroid() {
 	$.login.close({
 		activityExitAnimation : Ti.Android.R.anim.slide_out_right
 	});
 }
 
-
-$.email_p.addEventListener('focus', function(){
-$.email_p.borderColor = "#519dba";
-$.emailIcon.image = "/images/email_icon_focus.png";
+$.email_p.addEventListener('focus', function() {
+	$.email_p.borderColor = "#519dba";
+	$.emailIcon.image = "/images/email_icon_focus.png";
 });
-$.email_p.addEventListener('blur', function(){
-$.email_p.borderColor = "#ccc";
-$.emailIcon.image = "/images/email_icon.png";
+$.email_p.addEventListener('blur', function() {
+	$.email_p.borderColor = "#ccc";
+	$.emailIcon.image = "/images/email_icon.png";
 });
-$.email_l.addEventListener('focus', function(){
-$.email_l.borderColor = "#519dba";
-$.emailIcon.image = "/images/email_icon_focus.png";
+$.email_l.addEventListener('focus', function() {
+	$.email_l.borderColor = "#519dba";
+	$.emailIcon.image = "/images/email_icon_focus.png";
 });
-$.email_l.addEventListener('blur', function(){
-$.email_l.borderColor = "#ccc";
-$.emailIcon.image = "/images/email_icon.png";
-});
-
-$.pass.addEventListener('focus', function(){
-$.pass.borderColor = "#519dba";
-$.passIcon.image = "/images/pass_icon_focus.png";
-});
-$.pass.addEventListener('blur', function(){
-$.pass.borderColor = "#ccc";
-$.passIcon.image = "/images/pass_icon.png";
+$.email_l.addEventListener('blur', function() {
+	$.email_l.borderColor = "#ccc";
+	$.emailIcon.image = "/images/email_icon.png";
 });
 
+$.pass.addEventListener('focus', function() {
+	$.pass.borderColor = "#519dba";
+	$.passIcon.image = "/images/pass_icon_focus.png";
+});
+$.pass.addEventListener('blur', function() {
+	$.pass.borderColor = "#ccc";
+	$.passIcon.image = "/images/pass_icon.png";
+});
 
 //Add our main Orientation Event listener
 Ti.Gesture.addEventListener("orientationchange", applyOrientiation);

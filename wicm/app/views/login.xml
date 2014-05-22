@@ -106,11 +106,11 @@
 				height="15"/>
 			<Label platform="android" 
 				top="20"
-				html="By continuing you confirm that you've read and accept the <u style='color#519dba'>Privacy and Terms</u>"
+				html="By continuing you confirm that you've read and accept the <u style='color:#519dba'>Privacy and Terms</u>"
 				color="#808080"
 				fontSize="14"
 				textAlign="center"
-				width="72%"/>
+				width="72%" onClick="showPrivacyPolicy" />
 			<ImageView platform="ios"
 				image="/images/toc.png"
 				top="20"
@@ -235,13 +235,13 @@
 					top="40"
 					width="218"
 					height="30"/>
-					<Label platform="android" 
+				<Label platform="android" 
 					top="40"
-					html="By continuing you confirm that you've read and accept the <u style='color#519dba'>Terms of Service</u>"
+					html="By continuing you confirm that you've read and accept the <u style='color:#519dba'>Privacy and Terms</u>"
 					color="#808080"
 					fontSize="14"
 					textAlign="center"
-					width="72%"/>
+					width="72%" onClick="showPrivacyPolicy" />
 				<ImageView platform="ios"
 					image="/images/toc.png"
 					top="40"
